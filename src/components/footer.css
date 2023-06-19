@@ -141,7 +141,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: #2C347C;
+    /* background: #2C347C; */
     position: absolute;
     border-radius: 50%;
     left: 0;
@@ -157,6 +157,10 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    
+        background-color: blue; /* Change the background color on hover */
+        color: white; /* Change the icon color on hover */
+      
 }
 .newslatter input {
     margin-bottom: 10px;

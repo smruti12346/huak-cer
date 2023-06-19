@@ -297,7 +297,12 @@ body {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+    
 }
+.header_social .hd_social_icons li a:hover {
+    background-color: #2C347C; /* Change the background color on hover */
+    color: white; /* Change the icon color on hover */
+  }
 .header_area {
     background-color: #ffffff;
     border-bottom: 2px solid #F1F1F1;
@@ -345,10 +350,10 @@ body {
     float: right;
 }
 .main_menu_area .navbar-nav .header_right_btn a.btn-yellow {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: #fff;
-    padding: 15px 40px;
+    padding: 13px 30px;
     margin-top: 12px;
 }
 .main_menu_area .navbar-nav li.header_right_btn a:hover {
@@ -2063,6 +2068,7 @@ iframe {
 .blog_share_box .bl_share_img img {
     width: 50%;
     height: 50%;
+    margin-left: 81px;
 }
 .bl_share_img .blog_date {
     width: 57px;

@@ -35,7 +35,7 @@ function Navbar() {
                     <a href="#">Contact Us</a>
                   </li>
                   <li className="header_right_btn">
-                    <a className="btn-yellow" href="#">Book Now</a>
+                    <a className="btn-yellow" href="#">Get a Quote</a>
                   </li>
                 </ul>
               </div>{/*end .collapse*/}
