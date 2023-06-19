@@ -1,4 +1,5 @@
 import React from 'react'
+import './footer.css';
 
 function Footer() {
   return (
@@ -27,7 +28,7 @@ function Footer() {
             </div>{/*end .col-md-4*/}
           </div>{/*end .container*/}
         </div>{/*end .footer_contact*/}
-        <div className="footer_content section_padding">
+        <div className="footer_content section_padding1">
           <div className="container">
             <div className="row">
               <div className="col-md-4 col-sm-6">
@@ -67,7 +68,7 @@ function Footer() {
             <div className="copyright_area">
               <div className="row">
                 <div className="col-md-8 col-sm-6 copyright_text">
-                  <p>© copyright 2023 by Shenzhen HUAK Testing Technology Co., Ltd.</p>
+                  <p>© copyright 2023 by The Technovate</p>
                 </div>{/*end .col-md-8*/}
                 <div className="col-md-4 col-sm-6 copyright_social text-right">
                   <ul>
@@ -85,7 +86,7 @@ function Footer() {
             </div>{/*end .copyright_area*/}
           </div>{/*end .container*/}
         </div>{/*end .footer_content*/}
-        <img src="assets/images/shape/footer-shape.png" className="footer_shape" alt="footer shape" />
+       
       </footer>{/*end .footer_area*/}
       {/*===========================
         End Footer

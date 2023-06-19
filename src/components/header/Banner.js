@@ -2,10 +2,28 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './banner.css';
 
 
 function Banner() {
+  const NextArrow = ({ onClick }) => {
+    return (
+      <button className="slick-arrow1 " onClick={onClick}>
+        <FontAwesomeIcon icon={faChevronRight}  />
+      </button>
+    );
+  };
+
+  // Custom Previous Arrow component
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <button className="slick-arrow2 " onClick={onClick}>
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
+    );
+  };
   const settings = {
     dots: false,
     infinite: true,
@@ -14,6 +32,8 @@ function Banner() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
@@ -23,7 +43,6 @@ function Banner() {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-               
                 <p><span className="subtitle_number">01</span> Australian Certification Project</p>
                 <h1>RCM Certification</h1>
                 <div className="slide_button">

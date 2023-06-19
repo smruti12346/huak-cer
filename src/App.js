@@ -30,8 +30,8 @@ function App() {
    
     <LabIntroduction/>
 
-  <Testimonial/>  
-    <Cta2/>
+  {/* <Testimonial/>   */}
+  
     <LatestNews/>
     <ContactForm/>
     <Footer/>

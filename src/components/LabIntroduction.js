@@ -10,8 +10,8 @@ function LabIntroduction() {
   // Custom Next Arrow component
   const NextArrow = ({ onClick }) => {
     return (
-      <button className="slick-arrow " onClick={onClick}>
-        <FontAwesomeIcon icon={faChevronRight} />
+      <button className="slick-arrow1 " onClick={onClick}>
+        {/* <FontAwesomeIcon icon={faChevronRight} className='right-arrow' /> */}
       </button>
     );
   };
@@ -19,8 +19,8 @@ function LabIntroduction() {
   // Custom Previous Arrow component
   const PrevArrow = ({ onClick }) => {
     return (
-      <button className="slick-arrow slick-prev" onClick={onClick}>
-        <FontAwesomeIcon icon={faChevronLeft} />
+      <button className="slick-arrow1 slick-prev1" onClick={onClick}>
+        {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
       </button>
     );
   };
@@ -29,9 +29,12 @@ function LabIntroduction() {
     className: 'center',
     centerMode: true,
     infinite: true,
+    dots: true,
     centerPadding: '30px',
     slidesToShow: 3,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -143,7 +146,7 @@ function LabIntroduction() {
                     <h3>DIP/EFT/SURGE Integrated Test System</h3>
                   </a>
                   <p>
-                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
                   </p>
                   <a href="#" className="btn-yellow">
                     View Details
@@ -212,7 +215,7 @@ function LabIntroduction() {
                     <h3>Power Freq. Magnetic Field Immunity</h3>
                   </a>
                   <p>
-                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
                   </p>
                   <a href="#" className="btn-yellow">
                     View Details
@@ -258,7 +261,7 @@ function LabIntroduction() {
                     <h3>Electrostatic Discharge Immunity Test</h3>
                   </a>
                   <p>
-                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
                   </p>
                   <a href="#" className="btn-yellow">
                     View Details

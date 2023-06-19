@@ -7,13 +7,14 @@
     background: url(../slider-1.jpg) center center no-repeat;
     background-size: cover;
     height: 100%;
-    padding: 338px 0 238px 0;
+    padding: 130px 0 238px 0;
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
 }
 .slider_bg2 {
     background-image: url(../slider-1.jpg);
+    
 }
 .slider_bg3 {
     background-image: url(../slider-1.jpg);
@@ -123,3 +124,31 @@
 .header_slider_area.home_v2_header_slider {
     padding-top: 100px;
 }
+
+.slick-arrow1 {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  .slick-arrow2 {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    position: absolute;
+    top: 48%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  

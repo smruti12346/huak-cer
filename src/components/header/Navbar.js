@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function Navbar() {
   return (
     <>
-    
       {/*===========================
         Start Main Menu
-===========================*/}
-      <div className="main_menu_area">
+      ===========================*/}
+      <div className="main_menu_area sticky">
         <div className="container">
           <div className="row">
             <div className="col-md-2 col-sm-12">
@@ -24,10 +23,17 @@ function Navbar() {
               <div className="collapse navbar-collapse remove_padding" id="myNavbar">
                 <ul className="nav navbar-nav text-center">
                   <li>
-                    <a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>                        
-                  <li><a href="#">Contact Us</a></li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>                        
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
                   <li className="header_right_btn">
                     <a className="btn-yellow" href="#">Book Now</a>
                   </li>
@@ -39,9 +45,9 @@ function Navbar() {
       </div>{/*end .main_menu_area*/}
       {/*===========================
         End Main Menu
-===========================*/}
-   </>
-  )
+      ===========================*/}
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;
