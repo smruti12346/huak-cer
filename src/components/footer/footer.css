@@ -157,9 +157,8 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    
-        background-color: blue; /* Change the background color on hover */
-        color: white; /* Change the icon color on hover */
+    background-color: blue; /* Change the background color on hover */
+    color: white; /* Change the icon color on hover */
       
 }
 .newslatter input {

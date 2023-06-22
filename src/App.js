@@ -1,42 +1,26 @@
-
 import React from 'react'
-
-import TopNavbar from './components/header/TopNavbar';
-import Navbar from './components/header/Navbar';
-import Banner from './components/header/Banner';
-import FeatureServices from './components/FeatureServices';
-import About from './components/About';
-import CommonServices from './components/CommonServices';
-import Cta from './components/Cta';
-import LabIntroduction from './components/LabIntroduction';
-
-import Cta2 from './components/Cta2';
-import LatestNews from './components/LatestNews';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
-import Testimonial from './components/Testimonial'
-
+import Home from './components/home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Aboutus from './components/aboutus/Aboutus'
+import Services from './components/services/Services'
+import Contactus from './components/contactus/Contactus'
 
 function App() {
   return (
     <>
-     <TopNavbar/>
-     <Navbar/>
-    <Banner/>
-    <FeatureServices/>
-    <About/>
-    <CommonServices/>
-    <Cta/>
-   
-    <LabIntroduction/>
+      <BrowserRouter> 
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<Aboutus/>}/>
+          <Route path='/services' element={<Services/>}></Route>
+          <Route path='/contactus' element={<Contactus/>}></Route>
 
-  {/* <Testimonial/>   */}
-  
-    <LatestNews/>
-    <ContactForm/>
-    <Footer/>
+        </Routes>
+      </BrowserRouter>
+      
     </>
-  );
+  )
 }
 
-export default App;
+export default App
+

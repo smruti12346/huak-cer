@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -11,9 +12,9 @@ function Navbar() {
           <div className="row">
             <div className="col-md-2 col-sm-12">
               <button type="button" className="navbar-toggles">
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-                <span className="icon-bar" />
+                <span className="icon-bar"/>
+                <span className="icon-bar"/>
+                <span className="icon-bar"/>
               </button>
               <a href="#" className="logo">
                 <img src="assets/images/logo.png" alt="Logo" />
@@ -23,16 +24,16 @@ function Navbar() {
               <div className="collapse navbar-collapse remove_padding" id="myNavbar">
                 <ul className="nav navbar-nav text-center">
                   <li>
-                    <a href="#">Home</a>
+                    <NavLink to="/">Home </NavLink>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <NavLink to="/about">About Us</NavLink>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <NavLink to="/services">Services</NavLink>
                   </li>                        
                   <li>
-                    <a href="#">Contact Us</a>
+                    <NavLink to="/contactus">Contact Us</NavLink>
                   </li>
                   <li className="header_right_btn">
                     <a className="btn-yellow" href="#">Get a Quote</a>

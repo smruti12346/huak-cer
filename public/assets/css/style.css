@@ -518,6 +518,7 @@ body {
     background-size: cover;
     position: relative;
     padding-top: 224px;
+   
 }
 .breadcrumb_section .breadcrumb {
     background: none;
@@ -1057,7 +1058,7 @@ section.about_area img.about_shape {
     background-color: #2C347C;
 }
 .service_box .btn-yellow:hover {
-    color: #38373c;
+    color: #fff;
 }
 .service_box:hover .btn-yellow {
     background-color: #2C347C;
@@ -1632,7 +1633,7 @@ section.about_area img.about_shape {
     background-color: #f1f1f1;
     width: 100%;
     overflow: hidden;
-    padding: 120px 0 110px 0;
+    padding: 0px 0 34px 0;
 }
 .testimonial_area .testimonial_heading_shape {
     font-size: 190px;
@@ -2545,7 +2546,7 @@ input.half_width {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 40px 40px;
+    padding: 40px 37px;
     border: 1px solid #F1F1F1;
     margin-right: 20px;
 }
@@ -2588,7 +2589,7 @@ input.half_width {
     font-weight: 400;
 }
 .contact_us .contact-right p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 55px;
     color: #87868a;
