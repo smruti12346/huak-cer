@@ -9,17 +9,19 @@ import LabIntroduction from '../LabIntroduction'
 import Testimonial from '../Testimonial'
 import LatestNews from '../LatestNews'
 import ContactForm from '../ContactForm'
+import Downbanner from '../Downbanner'
 
 function Home() {
   return (
     <>
       <Header/>
       <Banner/>
+      <Downbanner/>
       <FeatureServices/>
       <About/>
       <CommonServices/>
       <LabIntroduction/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <LatestNews/>
       <ContactForm/>
       <Footer/>

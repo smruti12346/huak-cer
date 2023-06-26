@@ -31,7 +31,10 @@ function Navbar() {
                   </li>
                   <li>
                     <NavLink to="/services">Services</NavLink>
-                  </li>                        
+                  </li>
+                  <li>
+                    <NavLink to="/news">News</NavLink>
+                  </li>                          
                   <li>
                     <NavLink to="/contactus">Contact Us</NavLink>
                   </li>

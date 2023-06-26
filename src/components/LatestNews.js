@@ -18,7 +18,7 @@ function LatestNews() {
             <div className="col-md-4 col-sm-6">
               <div className="blog_share_box">
                 <div className="bl_share_img">
-                  <img src="assets/images/blog/news-1.jpg" alt="blog 1" />
+                  <img src="/assets/images/services/ce-service.png" alt="blog 1" />
                   <span className="blog_date">07 Nov</span>
                 </div>{/*end .bl_share_img*/}
                 <div className="blog_share_details">
@@ -31,7 +31,7 @@ function LatestNews() {
             <div className="col-md-4 col-sm-6">
               <div className="blog_share_box">
                 <div className="bl_share_img">
-                  <img src="assets/images/blog/news-2.jpg" alt="blog 2" />
+                  <img src="/assets/images/services/fcc-service.png" alt="blog 2" />
                   <span className="blog_date">26 Oct</span>
                 </div>{/*end .bl_share_img*/}
                 <div className="blog_share_details">
@@ -44,7 +44,7 @@ function LatestNews() {
             <div className="col-md-4 col-sm-6">
               <div className="blog_share_box">
                 <div className="bl_share_img">
-                  <img src="assets/images/blog/news-3.jpg" alt="blog 3" />
+                  <img src="/assets/images/services/rcm-service.png" alt="blog 3" />
                   <span className="blog_date">20 Oct</span>
                 </div>{/*end .bl_share_img*/}
                 <div className="blog_share_details">

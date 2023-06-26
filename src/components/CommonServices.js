@@ -21,7 +21,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/ce-service.png" alt="service 1" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/blog/news-1.jpg" alt="service 1" style={{ width: '50%', height: 'auto' }} />
                   <div className="icon-box">
                     <i className="icon-snow" />
                   </div>
@@ -47,7 +47,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/rohs-service.png" alt="service 2" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/blog/news-2.jpg" alt="service 2" style={{ width: '50%', height: 'auto' }} />
                   <div className="icon-box">
                     <i className="icon-fire" />
                   </div>
@@ -73,7 +73,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/telec-service.png" alt="service 3" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/blog/news-3.jpg" alt="service 3" style={{ width: '50%', height: 'auto' }} />
                   <div className="icon-box">
                     <i className="icon-ac" />
                   </div>
@@ -99,7 +99,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/fcc-service.png" alt="service 4" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/202104291137064751.png" alt="service 4" style={{ width: '52%', height: '99px', }} />
                   <div className="icon-box">
                     <i className="icon-fire" />
                   </div>
@@ -128,7 +128,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/ic-canadian.png" alt="service 5" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/news6.jpg" alt="service 5" style={{ width: '50%', height: 'auto' }} />
                   <div className="icon-box">
                     <i className="icon-fire" />
                   </div>
@@ -206,7 +206,7 @@ function CommonServices() {
             <div className="col-md-3 col-sm-6">
               <div className="service_box">
                 <div className="service_img">
-                  <img src="assets/images/services/un-38-service.png" alt="service 8" style={{ width: '50%', height: 'auto' }} />
+                  <img src="/assets/images/news5.png" alt="service 8" style={{ width: '50%', height: 'auto' }} />
                   <div className="icon-box">
                     <i className="icon-fire" />
                   </div>

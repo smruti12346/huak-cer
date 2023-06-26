@@ -31,9 +31,9 @@ function Services() {
           <div className="row">
             <div className="col-md-12">
               <div className="service_img_info_box">
-                <img src="assets/images/shape/service-color-shape.png" className="service_info_color_shape" alt="shape" />
+                {/* <img src="assets/images/shape/service-color-shape.png" className="service_info_color_shape" alt="shape" /> */}
               </div>{/*end .service_img_info_box*/}
-              <p className="col-md-10 col-md-offset-1">Loazzne® is a heating and cooling service company with a history of excellence, customer service, and quality craftsmanship. We specialize in HVAC service, replacement, and repair for both residential and commercial customers in North America.</p>
+              <p className="col-md-10 col-md-offset-1">  Manufacturers and importers of children's products must certify, in a written Children's Product Certificate (CPC) based on test results from a CPSC-accepted laboratory, that their children's products comply with applicable children's product safety rules. The CPC and supporting test reports must be in English.  HUAK is one of the CPSC accredited laboratories,The laboratory registration number is: 1710. It is the first testing laboratory accredited by CPSC for the whole Scope in China, which can provide customers with compliant children's product testing and assist customers in drafting CPC certificates.</p>
             </div>{/*end .col-md-12*/}
           </div>{/*end .row*/}
         </div>{/*end .container*/}

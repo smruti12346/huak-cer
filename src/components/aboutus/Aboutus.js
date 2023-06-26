@@ -15,8 +15,7 @@ function Aboutus() {
         <h1>About us</h1>
       </section>
 
-
-      <section className="bg-light pt-5 pb-5">
+     <section className="bg-light pt-5 pb-5">
       <div className="container">
         <h2 className="text-center text-yellow">About Us</h2>
         <div className="row parasection">
@@ -26,6 +25,10 @@ function Aboutus() {
           <div className="col-md-7">
             <p className='para'>Shenzhen HUAK Testing Technology Co., Ltd (short name HUAK) Located on 1-2F, B2 Building, Junfeng Zhongcheng Zhizao Innovation Park, Heping Community, Fuhai Street, Bao'an District, Shenzhen, China. It is mainly engaged in product electromagnetic compatibility test, radio frequency test, SAR, safety, batteries, harmful substances, and finished products analysis tests (such as RoHS) and environmental reliability specialized third-party testing institutions for testing.</p>
             <p className='para'>HUAK currently has fully equipped test equipment such as Safe, EMC, RF, SAR, battery, etc. The laboratory is strictly established in accordance with ISO/IEC 17025, ISO Guide 25, and EN 45001 international laboratory management regulations. And follow the "fair, scientific, accurate, and efficient" quality policy, with "quality first, service with heart" as the service purpose, based on China, serving the world.</p>
+    
+
+
+
           </div>
         </div>
         <p className="mt-5 para">HUAK, as the third party testing laboratory of the National CNAS Accreditation (CNAS L9589), has been recognized by many international certification bodies, such as Germany Phoenix, the United States FCC/Microm, and maintains close cooperation with the Chinese government inspection and quarantine agencies. These include the Shenzhen Institute of Metrological Quality Inspection, the Shenzhen Electronics Testing Center, and the China Quality Certification Center.</p>
@@ -41,10 +44,7 @@ function Aboutus() {
       </div>
     </section>
 
-
-
   
-            
       <Footer/>
     </>
   )
