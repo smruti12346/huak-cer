@@ -19,10 +19,11 @@ function Home() {
       <Downbanner/>
       <FeatureServices/>
       <About/>
+      <LatestNews/>
       <CommonServices/>
       <LabIntroduction/>
       {/* <Testimonial/> */}
-      <LatestNews/>
+   
       <ContactForm/>
       <Footer/>
     </>
