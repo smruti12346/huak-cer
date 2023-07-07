@@ -5,6 +5,7 @@ import Aboutus from "./components/aboutus/Aboutus";
 import Services from "./components/services/Services";
 import Contactus from "./components/contactus/Contactus";
 import News from "./components/news/News";
+import LabIntroductionPage from "./components/LabIntroductionPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             path="/services"
             element={<Services />}
           ></Route>
+          <Route path="/labintroduction" element={<LabIntroductionPage/>}></Route>
           <Route
             path="news"
             element={<News />}

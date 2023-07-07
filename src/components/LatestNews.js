@@ -68,7 +68,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/fcc-service.png"
+                        src="/assets/images/services/rohs-service.png"
                         alt="blog 2"
                       />
                     </div>
@@ -148,7 +148,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/ic.jpg"
                         alt="blog 4"
                       />
                     </div>
@@ -174,7 +174,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/cpc.jpg"
                         alt="blog 4"
                       />
                     </div>
@@ -200,7 +200,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/services/rcm-service.jpg"
                         alt="blog 4"
                       />
                     </div>
@@ -226,7 +226,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/cb-certification.jpg"
                         alt="blog 4"
                       />
                     </div>
@@ -252,7 +252,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/un38.jpg"
                         alt="blog 4"
                       />
                     </div>
@@ -278,7 +278,7 @@ function LatestNews() {
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
-                        src="/assets/images/services/telec-service.png"
+                        src="/assets/images/services/fcc-service.png"
                         alt="blog 4"
                       />
                     </div>

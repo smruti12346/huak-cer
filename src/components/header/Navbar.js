@@ -54,6 +54,9 @@ function Navbar() {
                     <NavLink to="/services">Services</NavLink>
                   </li>
                   <li>
+                    <NavLink to="/labintroduction">Lab Introduction</NavLink>
+                  </li>
+                  <li>
                     <NavLink to="/news">News</NavLink>
                   </li>
                   <li>
