@@ -6,6 +6,7 @@ import Services from "./components/services/Services";
 import Contactus from "./components/contactus/Contactus";
 import News from "./components/news/News";
 import LabIntroductionPage from "./components/LabIntroductionPage";
+import Single from "./components/services/Single";
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
             path="/services"
             element={<Services />}
           ></Route>
-          <Route path="/labintroduction" element={<LabIntroductionPage/>}></Route>
+          <Route
+            path="/labintroduction"
+            element={<LabIntroductionPage />}
+          ></Route>
           <Route
             path="news"
             element={<News />}
@@ -32,6 +36,10 @@ function App() {
           <Route
             path="/contactus"
             element={<Contactus />}
+          ></Route>
+          <Route
+            path="/services/:one"
+            element={<Single />}
           ></Route>
         </Routes>
       </BrowserRouter>
