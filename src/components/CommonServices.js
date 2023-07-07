@@ -1,33 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 function CommonServices() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <>
       {/*===========================
@@ -46,92 +19,305 @@ function CommonServices() {
             </div>
             {/*end .col-md-12*/}
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Slider {...settings}>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-1.jpg"
-                      alt="Service 1"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-snow" />
-                    </div>
+          <div
+            className="row"
+            style={{ padding: "10px 0px" }}
+          >
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/blog/news-1.jpg"
+                    alt="service 1"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-snow" />
                   </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        HUAK Testing Lab. Approved FCC Authorized Laboratory
-                      </h2>
-                    </a>
-                    <p>
-                      From now on, the FCC will no longer accept test reports from
-                      accredited laboratories (Accredited Laboratory), and such
-                      laboratories will not ...
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
+                  {/* /.icon-box */}
                 </div>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-2.jpg"
-                      alt="Service 2"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-fire" />
-                    </div>
-                  </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        SASO Authorized (HUAK) Registration Certificate of Laboratory
-                      </h2>
-                    </a>
-                    <p>
-                      SASO Authorized (HUAK) Registration Certificate of Laboratory,
-                      HUAK Testing SASO Approved Scope: SASO 2870, SASO 2902, SASO 2927.
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>
+                      HUAK Testing Lab. Approved FCC Authorized Laboratory
+                    </h2>
+                  </a>
+                  <p>
+                    From now on, the FCC will no longer accept test reports from
+                    accredited laboratories (Accredited Laboratory), and such
+                    laboratories will not ...
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
                 </div>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-3.jpg"
-                      alt="Service 3"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-ac" />
-                    </div>
-                  </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        HUAK Testing Lab. was successfully recognized by the A2LA
-                      </h2>
-                    </a>
-                    <p>
-                      Shenzhen HUAK Testing Technology Co., Ltd. (EMC/RF Lab)
-                      successfully passed the on-site review conducted by senior
-                      A2LA review experts ...
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
-                </div>
-                {/* Add more service boxes here */}
-              </Slider>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
             </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/blog/news-2.jpg"
+                    alt="service 2"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>
+                      SASO Authorized (HUAK) Registration Certificate of
+                      Laboratory
+                    </h2>
+                  </a>
+                  <p>
+                    SASO Authorized (HUAK) Registration Certificate of
+                    Laboratory, HUAK Testing SASO Approved Scope: SASO 2870,
+                    SASO 2902, SASO 2927.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/blog/news-3.jpg"
+                    alt="service 3"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-ac" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>
+                      HUAK Testing Lab. was successfully recognized by the A2LA
+                    </h2>
+                  </a>
+                  <p>
+                    Shenzhen HUAK Testing Technology Co., Ltd. (EMC/RF Lab)
+                    successfully passed the on-site review conducted by senior
+                    A2LA review experts ...
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/202104291137064751.png"
+                    alt="service 4"
+                    style={{ width: "52%", height: "99px" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>
+                      HUAK Successfully Joined Amazon Service Provider Network
+                    </h2>
+                  </a>
+                  <p>
+                    HUAK Testing Lab. Became Amazons Official Testing and
+                    Certification Service Provider
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+          </div>
+          {/*end .row*/}
+          <div
+            className="row"
+            style={{ padding: "10px 0px" }}
+          >
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/news6.jpg"
+                    alt="service 5"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>SASO Certification Authorization</h2>
+                  </a>
+                  <p>
+                    SASO Certification Authorization. On May 21, 2018, HUAK
+                    signed an accreditation cooperation agreement with the Saudi
+                    Standards, Metrology and Quality (SASO)
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="assets/images/services/cpc-service.png"
+                    alt="service 6"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>
+                      Good news: HUAK has Completed the Full Expansion of CPSC
+                      Scope
+                    </h2>
+                  </a>
+                  <p>
+                    Good news: HUAK has Completed the Full Expansion of CPSC
+                    Scope
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="assets/images/services/rcm-service.png"
+                    alt="service 7"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>HUAK Successfully Recognized by CNAS</h2>
+                  </a>
+                  <p>
+                    HUAK Testing Lab. (Safety Laboratory/Optical
+                    Laboratory/EMC/RF Lab) successfully passed the on-site
+                    review conducted by China CNAS senior review experts.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
+            <div className="col-md-3 col-sm-6">
+              <div className="service_box">
+                <div className="service_img">
+                  <img
+                    src="/assets/images/news5.png"
+                    alt="service 8"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                  <div className="icon-box">
+                    <i className="icon-fire" />
+                  </div>
+                  {/* /.icon-box */}
+                </div>
+                {/*end .service_img*/}
+                <div className="service_details">
+                  <a href="#">
+                    <h2>HUAK 5G NR, Sub 6G Automated Test System Was Built</h2>
+                  </a>
+                  <p>
+                    HUAK 5G NR, Sub 6G Automated Test System Was Built5G NR SUB
+                    6G、FCC、CE、SRRC test
+                  </p>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    LEARN MORE
+                  </a>
+                </div>
+                {/*end .service_details*/}
+              </div>
+              {/*end .service_box*/}
+            </div>
+            {/*end .col-md-3*/}
           </div>
           {/*end .row*/}
         </div>

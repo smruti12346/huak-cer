@@ -1,161 +1,282 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import './LabIntroduction.css'; // Import custom CSS file for LabIntroduction component
 
-function CommonServices() {
+function LabIntroduction() {
+  // Custom Next Arrow component
+  const NextArrow = ({ onClick }) => {
+    return (
+      <button className="slick-arrow1 " onClick={onClick}>
+        {/* <FontAwesomeIcon icon={faChevronRight} className='right-arrow' /> */}
+      </button>
+    );
+  };
+
+  // Custom Previous Arrow component
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <button className="slick-arrow1 slick-prev1" onClick={onClick}>
+        {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
+      </button>
+    );
+  };
+
   const settings = {
-    dots: true,
+    className: 'center',
+    centerMode: true,
     infinite: true,
-    speed: 500,
+    dots: true,
+    centerPadding: '30px',
     slidesToShow: 3,
-    slidesToScroll: 1,
+    speed: 500,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
           slidesToShow: 1,
+          centerPadding: '10px',
         },
       },
     ],
   };
 
+  
+
   return (
     <>
       {/*===========================
-        Start Service
+        Start CounterUp
       ===========================*/}
-      <section className="service_area section_padding">
+      <section className="counterup_area text-center section_padding">
         <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="hero-section-title text-center">
-                <h2 style={{ color: "#2c347c" }}>
-                  Qualification & Certificate
-                </h2>
+          <div className="hero-section-title text-center">
+            <h1>Lab Introduction</h1>
+          </div>
+          {/* end .hero-section-title */}
+          <Slider {...settings}>
+            {/* Slide 1 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/1.jpg"
+                  className="number_img_shape"
+                  alt="Shape"   style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>966 EMC Laboratory</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
               </div>
-              {/*end .hero-section-title*/}
             </div>
-            {/*end .col-md-12*/}
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Slider {...settings}>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-1.jpg"
-                      alt="Service 1"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-snow" />
-                    </div>
-                  </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        HUAK Testing Lab. Approved FCC Authorized Laboratory
-                      </h2>
-                    </a>
-                    <p>
-                      From now on, the FCC will no longer accept test reports from
-                      accredited laboratories (Accredited Laboratory), and such
-                      laboratories will not ...
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
+
+            {/* Slide 2 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/2.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Conducted Emission Testing</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
                 </div>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-2.jpg"
-                      alt="Service 2"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-fire" />
-                    </div>
-                  </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        SASO Authorized (HUAK) Registration Certificate of Laboratory
-                      </h2>
-                    </a>
-                    <p>
-                      SASO Authorized (HUAK) Registration Certificate of Laboratory,
-                      HUAK Testing SASO Approved Scope: SASO 2870, SASO 2902, SASO 2927.
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
-                </div>
-                <div className="service_box">
-                  <div className="service_img">
-                    <img
-                      src="/assets/images/blog/news-3.jpg"
-                      alt="Service 3"
-                      style={{ width: "50%", height: "auto" }}
-                    />
-                    <div className="icon-box">
-                      <i className="icon-ac" />
-                    </div>
-                  </div>
-                  <div className="service_details">
-                    <a href="#">
-                      <h2>
-                        HUAK Testing Lab. was successfully recognized by the A2LA
-                      </h2>
-                    </a>
-                    <p>
-                      Shenzhen HUAK Testing Technology Co., Ltd. (EMC/RF Lab)
-                      successfully passed the on-site review conducted by senior
-                      A2LA review experts ...
-                    </p>
-                    <a href="#" className="btn-yellow">
-                      LEARN MORE
-                    </a>
-                  </div>
-                </div>
-               
-
-
-
-
-
-
-
-
-
-
-
-
-               
-              </Slider>
+              </div>
             </div>
-          </div>
-          {/*end .row*/}
+
+            {/* Slide 3 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/1.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>HUAK RS Testing Lab.</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Rest of the slides */}
+            {/* Slide 4 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/1.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>DIP/EFT/SURGE Integrated Test System</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 5 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/2.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Fully Automatic RF Test System</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 6 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/1.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Harmonic/Flicker</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 7 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/3.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Power Freq. Magnetic Field Immunity</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 8 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/2.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Fully Automatic RF Test System</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered alteration.
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 9 */}
+            <div>
+              <div className="counter_box1">
+                <img
+                  src="assets/images/services/1.jpg"
+                  className="number_img_shape"
+                  alt="Shape"  style={{ padding: '4px' }} 
+                  // Add margin to create distance between images
+                />
+                <div className="service_details1">
+                  <a href="#">
+                    <h3>Electrostatic Discharge Immunity Test</h3>
+                  </a>
+                  <p>
+                    There are many variations passages of lorem ipsum available but the majority have suffered .
+                  </p>
+                  <a href="#" className="btn-yellow">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Slider>
+          {/* end .row */}
         </div>
-        {/*end .container*/}
+        {/* end .container */}
       </section>
-      {/*end .service_area*/}
-      {/*===========================
-        End Service
-      ===========================*/}
+      {/* end .counterup_area */}
     </>
   );
 }
 
-export default CommonServices;
+export default LabIntroduction;
