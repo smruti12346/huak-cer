@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
+
 function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   const handleMenu = () => {
     setToggle(!toggle);
   };
+
+  const handleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
+  };
+
   return (
     <>
       {/*===========================
@@ -26,10 +33,7 @@ function Navbar() {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <a
-                href="#"
-                className="logo py-3"
-              >
+              <a href="#" className="logo py-3">
                 <img
                   src="assets/images/logo.png"
                   alt="Logo"
@@ -45,13 +49,42 @@ function Navbar() {
               >
                 <ul className="nav navbar-nav text-center">
                   <li>
-                    <NavLink to="/">Home </NavLink>
+                    <NavLink to="/">Home</NavLink>
                   </li>
                   <li>
                     <NavLink to="/about">About Us</NavLink>
                   </li>
-                  <li>
+                  <li
+                    className={`services-dropdown ${
+                      servicesDropdownOpen ? "open" : ""
+                    }`}
+                    onMouseEnter={handleServicesDropdown}
+                    onMouseLeave={handleServicesDropdown}
+                  >
                     <NavLink to="/services">Services</NavLink>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <NavLink to="/services/1">Certification Project of China</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/2">Certification Project of Asian </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/3">EU Certification Project </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/4">Australian Certification Project </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/5">International Certification Project </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/6">Other Certification Projects </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/services/7">Pressure Vessel Certification Project </NavLink>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <NavLink to="/labintroduction">Lab Introduction</NavLink>
@@ -63,10 +96,7 @@ function Navbar() {
                     <NavLink to="/contactus">Contact Us</NavLink>
                   </li>
                   <li className="header_right_btn">
-                    <a
-                      className="btn-yellow"
-                      href="#"
-                    >
+                    <a className="btn-yellow" href="#">
                       Get a Quote
                     </a>
                   </li>
@@ -81,13 +111,42 @@ function Navbar() {
         {/*end .container*/}
         <div className={`mobile-menu ${toggle ? "" : "d-none"}`}>
           <p className="text-center">
-            <NavLink to="/">Home </NavLink>
+            <NavLink to="/">Home</NavLink>
           </p>
           <p className="text-center">
             <NavLink to="/about">About Us</NavLink>
           </p>
-          <p className="text-center">
+          <p
+            className="text-center"
+            onMouseEnter={handleServicesDropdown}
+            onMouseLeave={handleServicesDropdown}
+          >
             <NavLink to="/services">Services</NavLink>
+            {servicesDropdownOpen && (
+              <ul className="dropdown-menu">
+                <li>
+                  <NavLink to="/services/1">Service 1</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/2">Service 2</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/3">Service 3</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/4">Service 4</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/5">Service 5</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/6">Service 6</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/services/7">Service 7</NavLink>
+                </li>
+              </ul>
+            )}
           </p>
           <p className="text-center">
             <NavLink to="/news">News</NavLink>
