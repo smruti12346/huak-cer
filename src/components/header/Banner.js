@@ -1,17 +1,22 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import './banner.css';
-
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import "./banner.css";
 
 function Banner() {
   const NextArrow = ({ onClick }) => {
     return (
-      <button className="slick-arrow1 " onClick={onClick}>
-        <FontAwesomeIcon icon={faChevronRight}  />
+      <button
+        className="slick-arrow1 "
+        onClick={onClick}
+      >
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     );
   };
@@ -19,7 +24,10 @@ function Banner() {
   // Custom Previous Arrow component
   const PrevArrow = ({ onClick }) => {
     return (
-      <button className="slick-arrow2 " onClick={onClick}>
+      <button
+        className="slick-arrow2 "
+        onClick={onClick}
+      >
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
     );
@@ -43,10 +51,22 @@ function Banner() {
           <div className="container">
             <div className="row">
               <div className="col-md-7">
-                <p><span className="subtitle_number">01</span> Australian Certification Project</p>
-                <h1> Quality Wins Customers, Reputation Creates Benefits!</h1>
+                <p>
+                  <span className="subtitle_number">01</span> Australian
+                  Certification Project
+                </p>
+                <h1>
+                  {" "}
+                  Quality Wins Customers, Reputation Creates{" "}
+                  <span className="span-slide">Benefits! </span>
+                </h1>
                 <div className="slide_button">
-                  <a href="#" className="btn-yellow">GET A FREE QUOTE</a>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    GET A FREE QUOTE
+                  </a>
                 </div>
               </div>
             </div>
@@ -56,10 +76,21 @@ function Banner() {
           <div className="container">
             <div className="row">
               <div className="col-md-7">
-                <p><span className="subtitle_number">02</span> Certification Project of Asian</p>
-                <h1>Faimess, Rigorous, Authority, Effciency.</h1>
+                <p>
+                  <span className="subtitle_number">02</span> Certification
+                  Project of Asian
+                </p>
+                <h1>
+                  Faimess, Rigorous, Authority,{" "}
+                  <span className="span-slide">Effciency.</span>
+                </h1>
                 <div className="slide_button">
-                  <a href="#" className="btn-yellow">GET A FREE QUOTE</a>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    GET A FREE QUOTE
+                  </a>
                 </div>
               </div>
             </div>
@@ -69,12 +100,21 @@ function Banner() {
           <div className="container">
             <div className="row">
               <div className="col-md-7">
-                <p><span className="subtitle_number">03</span> EU Certification Project</p>
-                <h1>Honesty-Based, Professional Service, Innovation, Strive For Excellence,
-Win The World.
-                 </h1>
+                <p>
+                  <span className="subtitle_number">03</span> EU Certification
+                  Project
+                </p>
+                <h1>
+                  Honesty-Based, Professional Service, Innovation, Strive For
+                  Excellence, <span className="span-slide">Win The World.</span>
+                </h1>
                 <div className="slide_button">
-                  <a href="#" className="btn-yellow">GET A FREE QUOTE</a>
+                  <a
+                    href="#"
+                    className="btn-yellow"
+                  >
+                    GET A FREE QUOTE
+                  </a>
                 </div>
               </div>
             </div>
@@ -86,7 +126,6 @@ Win The World.
 }
 
 export default Banner;
-
 
 // import React from "react";
 
@@ -108,7 +147,7 @@ export default Banner;
 //               {/*end .hero-section-title*/}
 //             </div>
 //             {/*end .col-md-12*/}
-//           </div>     
+//           </div>
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img src="/assets/images/blog/news-1.jpg" alt="service 1" style={{ width: "50%", height: "auto" }}/>
@@ -138,7 +177,7 @@ export default Banner;
 //                 </div>
 //                 {/*end .service_details*/}
 //               </div>
-//               {/*end .service_box*/}   
+//               {/*end .service_box*/}
 //             {/* <div className="col-md-3 col-sm-6"> */}
 //               <div className="service_box">
 //                 <div className="service_img">
@@ -175,8 +214,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-           
-         
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -211,8 +249,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-          
-          
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -246,9 +283,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-          
-          
-          
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -281,9 +316,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-           
-           
-           
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -318,9 +351,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-            
-          
-            
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -353,8 +384,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-          
-       
+
 //               <div className="service_box">
 //                 <div className="service_img">
 //                   <img
@@ -386,7 +416,7 @@ export default Banner;
 //                 {/*end .service_details*/}
 //               </div>
 //               {/*end .service_box*/}
-       
+
 //         </div>
 //         {/*end .container*/}
 //       </section>

@@ -18,24 +18,39 @@ function Services() {
         <h1>Our services</h1>
       </section>
 
-      <section className="bg-light pt-5 pb-5">
+      {/* <section className="bg-light pt-5 pb-5">
         <div className="container">
           <h2 className="text-center text-yellow">Services</h2>
         </div>
-      </section>
+      </section> */}
 
       {/*===========================
         Start Service Style 2
 ===========================*/}
-      <div className="service_style_2_area text-center section_padding">
+      <div className="service_style_3_area text-center section_padding">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-2 col-sm-2">
+              <div
+                style={{
+                  width: "30px",
+                  height: "4px",
+                  marginLeft: "3px",
+                  marginBottom: "5px",
+                  backgroundColor: "#D8B14B",
+                }}
+              ></div>
+              <h3 style={{ textAlign: "left", color: "#000" }}>
+                Our <br />
+                Services
+              </h3>
+            </div>
+            <div className="col-10 col-sm-10">
               {/* <div className="service_img_info_box">
                 
               </div> */}
               {/*end .service_img_info_box*/}
-              <p className="col-md-10 col-md-offset-1">
+              <p style={{ textAlign: "left", fontWeight: "400" }}>
                 {" "}
                 Manufacturers and importers of children's products must certify,
                 in a written Children's Product Certificate (CPC) based on test
@@ -55,19 +70,72 @@ function Services() {
         </div>
         {/*end .container*/}
       </div>
-      {/*end .service_style_2_area*/}
-      {/*===========================
-        End Service Style 2
-===========================*/}
-      {/*===========================
-        Start Service
-===========================*/}
 
-<section className="blog_share_area section_padding">
-        <div className="container">
-          <div className="hero-section-title text-center">
-            <h2 style={{ color: "#2c347c" }}>Common Services</h2>
+      <section className="container">
+        <div className="row">
+          <div className="col-md-3">
+            <a href="#">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src="http://en.cer-mark.com/upload/201806/27/201806272217322105.jpg"
+                    height={60}
+                  />
+                  <h3>Certification Project of China</h3>
+                </div>
+              </div>
+            </a>
           </div>
+          <div className="col-md-3">
+            <a href="#">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src="http://en.cer-mark.com/upload/201806/28/201806280039468530.jpg"
+                    height={60}
+                  />
+                  <h3>Certification Project of Asian </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-md-3">
+            <a href="#">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src="http://en.cer-mark.com/upload/201806/28/201806280005040268.jpg"
+                    height={60}
+                  />
+                  <h3>EU Certification Project </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-md-3">
+            <a href="#">
+              <div className="card">
+                <div className="card-body">
+                  <img
+                    src="http://en.cer-mark.com/upload/201806/28/201806280042497006.jpg"
+                    height={60}
+                  />
+                  <h3>American Certification Project </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="blog_share_area"
+        style={{ marginTop: "30px" }}
+      >
+        <div className="container">
+          {/* <div className="hero-section-title text-center">
+            <h2 style={{ color: "#2c347c" }}>Common Services</h2>
+          </div> */}
           <div className="row">
             <div className="col-md-6">
               <div className="blog_share_box">
@@ -342,9 +410,8 @@ function Services() {
             </Link>
           </div> */}
         </div>
-      
+
         <div className="container">
-        
           <div className="row">
             <div className="col-md-6">
               <div className="blog_share_box">
@@ -363,7 +430,9 @@ function Services() {
                         <a href="#">SRRC Certification</a>
                       </h1>
                       <p>
-                      SRRC is a member of the National Radio Regulatory Commission. Since June 1, 1999, the Ministry of Information Industry (MII) has imposed .
+                        SRRC is a member of the National Radio Regulatory
+                        Commission. Since June 1, 1999, the Ministry of
+                        Information Industry (MII) has imposed .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -388,7 +457,9 @@ function Services() {
                         <a href="#">CCC Certification</a>
                       </h1>
                       <p>
-                      "CCC", referred to as "3C", it is the Chinese government to protect the personal safety of consumers and national security, to strengthen the quality of products.
+                        "CCC", referred to as "3C", it is the Chinese government
+                        to protect the personal safety of consumers and national
+                        security, to strengthen the quality of products.
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -415,7 +486,9 @@ function Services() {
                         <a href="#">CTA Certification</a>
                       </h1>
                       <p>
-                      The State implements a network licensing system for telecommunications terminal equipment, radio communication equipment and telecommunications .
+                        The State implements a network licensing system for
+                        telecommunications terminal equipment, radio
+                        communication equipment and telecommunications .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -440,7 +513,9 @@ function Services() {
                         <a href="#">CQC Certification</a>
                       </h1>
                       <p>
-                      CQC is a national certification body (NCB) on behalf of Chinas accession to the International Electrotechnical Commissions Electrotechnical Qualification Testing .
+                        CQC is a national certification body (NCB) on behalf of
+                        Chinas accession to the International Electrotechnical
+                        Commissions Electrotechnical Qualification Testing .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -465,7 +540,10 @@ function Services() {
                         <a href="#">NCC Certification of Taiwan</a>
                       </h1>
                       <p>
-                      NCC is the Taiwan Communications Communications Commission (The National Communications Commission) referred to, mainly in the management of the Taiwan market .
+                        NCC is the Taiwan Communications Communications
+                        Commission (The National Communications Commission)
+                        referred to, mainly in the management of the Taiwan
+                        market .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -490,7 +568,9 @@ function Services() {
                         <a href="#">OFCA Certification of Hongkong</a>
                       </h1>
                       <p>
-                      In Hong Kong, the TA has consulted the telecommunications industry to specify the technical specifications .
+                        In Hong Kong, the TA has consulted the
+                        telecommunications industry to specify the technical
+                        specifications .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -512,11 +592,12 @@ function Services() {
                   <div className="col-md-8">
                     <div className="blog_share_details">
                       <h1>
-                        <a href="#">PSB Certification of Singapore
-</a>
+                        <a href="#">PSB Certification of Singapore</a>
                       </h1>
                       <p>
-                      PSB certification is Singapore mandatory safety certification, but the electromagnetic compatibility part  not required.
+                        PSB certification is Singapore mandatory safety
+                        certification, but the electromagnetic compatibility
+                        part not required.
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -541,7 +622,10 @@ function Services() {
                         <a href="#">PSE Certification of Japan</a>
                       </h1>
                       <p>
-                      PSE certification is Japans mandatory safety certification to prove that the electrical and electronic products have passed the Japanese electrical .
+                        PSE certification is Japans mandatory safety
+                        certification to prove that the electrical and
+                        electronic products have passed the Japanese electrical
+                        .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -566,7 +650,9 @@ function Services() {
                         <a href="#">VCCI Certification of Japan</a>
                       </h1>
                       <p>
-                      VCCI is Japans Electromagnetic Compatibility Certification Mark and is managed by the Japan Voluntary Council for Information Technology Equipment.
+                        VCCI is Japans Electromagnetic Compatibility
+                        Certification Mark and is managed by the Japan Voluntary
+                        Council for Information Technology Equipment.
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -591,7 +677,9 @@ function Services() {
                         <a href="#">BIS Certification of India</a>
                       </h1>
                       <p>
-                      India in order to harmonize product regulatory standards and requirements to ensure product quality and safety, in 1955 began to implement product certification .
+                        India in order to harmonize product regulatory standards
+                        and requirements to ensure product quality and safety,
+                        in 1955 began to implement product certification .
                       </p>
                       {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
@@ -610,7 +698,6 @@ function Services() {
           </div> */}
         </div>
       </section>
-
 
       {/*===========================
         End Service

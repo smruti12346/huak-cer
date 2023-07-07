@@ -50,7 +50,7 @@ function Navbar() {
                   <li>
                     <NavLink to="/about">About Us</NavLink>
                   </li>
-                  <li>
+                  <li style={{ position: "relative" }}>
                     <NavLink to="/services">Services</NavLink>
                   </li>
                   <li>
@@ -88,6 +88,9 @@ function Navbar() {
           </p>
           <p className="text-center">
             <NavLink to="/services">Services</NavLink>
+          </p>
+          <p className="text-center">
+            <NavLink to="/labintroduction">Lab Introduction</NavLink>
           </p>
           <p className="text-center">
             <NavLink to="/news">News</NavLink>

@@ -17,7 +17,6 @@
 }
 .slider_bg2 {
   background-image: url(/public/assets/images/slider/banner-2.png);
-  
 }
 .slider_bg3 {
   background-image: url(/public/assets/images/slider/banner-3.png);
@@ -154,6 +153,8 @@
   transform: translateY(-50%);
   z-index: 999;
 }
-
-
-
+.span-slide {
+  color: #d8b14b;
+  font-size: 5.5rem;
+  font-weight: 600;
+}
