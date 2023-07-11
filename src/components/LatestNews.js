@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
 function LatestNews() {
   useEffect(() => {
@@ -24,18 +25,39 @@ function LatestNews() {
       box.style.height = `${maxHeight}px`;
     });
   };
+
+  // Slider settings
+  const settings = {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       {/*===========================
         Start Blog
-===========================*/}
+      ===========================*/}
       <section className="blog_share_area section_padding">
         <div className="container">
           <div className="hero-section-title text-center">
             <h2 style={{ color: "#2c347c" }}>Common Services</h2>
           </div>
-          <div className="row">
-            <div className="col-md-6">
+
+          <Slider {...settings}>
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
@@ -52,17 +74,17 @@ function LatestNews() {
                         <a href="#">CE Certification</a>
                       </h1>
                       <p>
-                        CE certification, which is limited to the product does
-                        not endanger the basic safety requirements of human,
-                        animal and cargo safety aspects, rather than the general
+                        CE certification, which is limited to the product does not
+                        endanger the basic safety requirements of human, animal and
+                        cargo safety aspects, rather than the general
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
@@ -76,21 +98,19 @@ function LatestNews() {
                   <div className="col-md-8">
                     <div className="blog_share_details">
                       <h1>
-                        <a href="#">RoHS testesting</a>
+                        <a href="#">RoHS testing</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
@@ -107,16 +127,16 @@ function LatestNews() {
                         <a href="#">REACH testing</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
@@ -133,24 +153,21 @@ function LatestNews() {
                         <a href="#">Japan TELEC certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
-                      <img
-                        src="/assets/images/ic.jpg"
-                        alt="blog 4"
-                      />
+                      <img src="/assets/images/ic.jpg" alt="blog 5" />
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -159,24 +176,21 @@ function LatestNews() {
                         <a href="#">Canadian IC certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
-                      <img
-                        src="/assets/images/cpc.jpg"
-                        alt="blog 4"
-                      />
+                      <img src="/assets/images/cpc.jpg" alt="blog 6" />
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -185,23 +199,23 @@ function LatestNews() {
                         <a href="#">Toy CPC certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
                         src="/assets/images/services/rcm-service.jpg"
-                        alt="blog 4"
+                        alt="blog 7"
                       />
                     </div>
                   </div>
@@ -211,23 +225,23 @@ function LatestNews() {
                         <a href="#">Australian RCM certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
                         src="/assets/images/cb-certification.jpg"
-                        alt="blog 4"
+                        alt="blog 8"
                       />
                     </div>
                   </div>
@@ -237,24 +251,21 @@ function LatestNews() {
                         <a href="#">CB certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
-                      <img
-                        src="/assets/images/un38.jpg"
-                        alt="blog 4"
-                      />
+                      <img src="/assets/images/un38.jpg" alt="blog 9" />
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -263,23 +274,23 @@ function LatestNews() {
                         <a href="#">UN38.3 testing</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+
+            <div>
               <div className="blog_share_box">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="bl_share_img">
                       <img
                         src="/assets/images/services/fcc-service.png"
-                        alt="blog 4"
+                        alt="blog 10"
                       />
                     </div>
                   </div>
@@ -289,21 +300,18 @@ function LatestNews() {
                         <a href="#">FCC certification</a>
                       </h1>
                       <p>
-                        There are many variations passages of lorem ipsum
-                        available but the majority have suffered alteration.
+                        There are many variations passages of lorem ipsum available
+                        but the majority have suffered alteration.
                       </p>
-                      {/* <span className="comment_author">by admin - <a href="#">3 Comments</a></span> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Slider>
+
           {/* <div className="text-center">
-            <Link
-              to="services"
-              className="btn-yellow"
-            >
+            <Link to="services" className="btn-yellow">
               All Services
             </Link>
           </div> */}
@@ -312,8 +320,9 @@ function LatestNews() {
 
       {/*===========================
         End Blog
-===========================*/}
+      ===========================*/}
     </>
   );
 }
+
 export default LatestNews;

@@ -4,17 +4,15 @@ import 'react-multi-carousel/lib/styles.css';
 
 function CommonServices() {
   const carouselConfig = {
-    
     responsive: {
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        infinite: true, 
         items: 4,
         partialVisibilityGutter: 40,
       },
       tablet: {
         breakpoint: { max: 1024, min: 768 },
-        items: 2,
+        items: 1,
         partialVisibilityGutter: 30,
       },
       mobile: {
@@ -44,9 +42,7 @@ function CommonServices() {
           <div className="row">
             <div className="col-md-12">
               <div className="hero-section-title text-center">
-                <h2 style={{ color: '#2c347c' }}>
-                  Qualification & Certificate
-                </h2>
+                <h2 style={{ color: '#2c347c' }}>Qualification & Certificate</h2>
               </div>
               {/*end .hero-section-title*/}
             </div>
@@ -54,20 +50,7 @@ function CommonServices() {
           </div>
           <div className="row">
             <div className="col">
-              <Carousel
-              responsive={carouselConfig.responsive}
-              swipeable={carouselConfig.swipeable}
-              draggable={carouselConfig.draggable}
-              infinite={carouselConfig.infinite}
-              keyBoardControl={carouselConfig.keyBoardControl}
-              customTransition={carouselConfig.customTransition}
-              transitionDuration={carouselConfig.transitionDuration}
-              containerClass={carouselConfig.containerClass}
-              dotListClass={carouselConfig.dotListClass}
-              itemClass={carouselConfig.itemClass}
-              autoPlay={true} // Enable automatic sliding
-              autoPlaySpeed={2000} // Set slide duration (in milliseconds)
-              >
+              <Carousel {...carouselConfig} autoPlay={true} autoPlaySpeed={2000}>
                 <div className="service_box">
                   <div className="service_img">
                     <img
@@ -156,7 +139,7 @@ function CommonServices() {
                 <div className="service_box">
                   <div className="service_img">
                     <img
-                      src="/assets/images/news6.jpg"
+                      src="/assets/images/news5.png"
                       alt="service 5"
                       style={{ width: '50%', height: 'auto' }}
                     />
@@ -218,7 +201,7 @@ function CommonServices() {
                 <div className="service_box">
                   <div className="service_img">
                     <img
-                      src="/assets/images/news5.png"
+                      src="/assets/images/news6.jpg"
                       alt="service 8"
                       style={{ width: '50%', height: 'auto' }}
                     />

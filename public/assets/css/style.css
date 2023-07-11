@@ -2412,7 +2412,8 @@ iframe {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  border: 1px solid #c1bbe0;
+  border-width: 8px;
+  border-image:  linear-gradient(to bottom right, #2c347c, #005599, #0074ac, #0092b5, #09aeb8) 1;
   padding: 10px;
   flex: 1 1 calc(50% - 20px); /* Adjusted size to accommodate spacing */
   margin: 10px; /* Added spacing between boxes */
