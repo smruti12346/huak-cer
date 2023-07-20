@@ -18,7 +18,6 @@ export default function Home() {
       <CommonServices />
       <LatestNews />
       <LabIntroduction />
-      {/* <Testimonial /> */}
       <ContactForm />
     </>
   );
