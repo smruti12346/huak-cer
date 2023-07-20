@@ -1,0 +1,21 @@
+.lab-intro-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .box {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 30px;
+  }
+  
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .box button {
+    margin-top: 20px;
+  }
+  

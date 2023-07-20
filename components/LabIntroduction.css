@@ -1,0 +1,41 @@
+.carousel-slide {
+    padding: 4px; /* Adjust the padding value to set the space between images */
+  }
+  .right-arrow{
+    background: transparent;
+    border: none;
+    color: #ce2d2d;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    position: relative;
+    top: 30%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  /* .slick-arrow1 {
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  } */
+  
+/*   
+  .slick-prev1 {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  } */
+
+  
