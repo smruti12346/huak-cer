@@ -61,9 +61,7 @@ function Footer() {
                 <div className="footer_textwidget textwidget">
                   <h2>About Shenzhen HUAK </h2>
                   <p>
-                    At Shenzhen HUAK , We don’t just provide resi-dential and
-                    commercial heating and air conditioning services; we make
-                    people’s lives easier. Better.
+                  Shenzhen HUAK Testing Technology Co., Ltd (short name HUAK) Located on 1-2F, B2 Building, Junfeng Zhongcheng Zhizao Innovation Park, Heping Community, Fuhai Street, Bao'an District, Shenzhen, China. It is mainly engaged in product electromagnetic compatibility test, radio frequency test, SAR, safety, batteries, harmful substances, and finished products analysis tests (such as RoHS) and environmental reliability specialized third-party testing institutions for testing.
                   </p>
                   <Image
                     src="/assets/images/news3.png"

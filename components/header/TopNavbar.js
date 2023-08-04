@@ -29,6 +29,10 @@ function TopNavbar() {
                         patty@cer-mark.com
                       </a>
                     </li>
+                    <li>
+                      <i className="fa fa-whatsapp" />{" "}
+                      <a href="#"> +86 13528437881</a>
+                    </li>
                   </ul>
                 </div>
                 {/*end .header_contact*/}

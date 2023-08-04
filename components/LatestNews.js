@@ -212,7 +212,7 @@ function LatestNews() {
                   <div className="col-md-8">
                     <div className="blog_share_details">
                       <h1>
-                        <a href="#">Toy CPC certification</a>
+                        <a href="/services/american-certification/cpc-certification">Toy CPC certification</a>
                       </h1>
                       <p>
                         There are many variations passages of lorem ipsum
