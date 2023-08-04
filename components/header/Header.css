@@ -1,0 +1,52 @@
+.mobile-menu p {
+  border-bottom: 1px solid #848484;
+  padding: 10px;
+}
+.d-none {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/* Add this CSS to your existing Header.css file */
+.services-dropdown {
+  position: relative;
+}
+
+.services-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #16b983;
+  box-shadow: 0 2px 8px rgba(219, 12, 12, 0.15);
+  z-index: 999;
+}
+
+.services-dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.services-dropdown .dropdown-menu li {
+  padding: 10px;
+}
+
+.services-dropdown .dropdown-menu li:hover a {
+  color: #09aeb8 !important;
+}
+.hd_contact li {
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+.navbar-nav {
+  line-height: 90px;
+}
+.header_right_btn {
+  margin-top: 8px;
+}
+
+.services-dropdown .dropdown-menu li:hover a {
+  color: #09aeb8 !important;
+}
