@@ -6,6 +6,7 @@ import { api_url, url } from "../Auth";
 import Certificate from "./dialog/Certificate";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import Link from "next/link";
 
 async function CommonServices() {
   const [open, setOpen] = useState(false);
@@ -110,7 +111,12 @@ async function CommonServices() {
                             __html: item.excerpt.rendered.substring(0, 70),
                           }}
                         ></p>
-                        <a className="btn-yellow">LEARN MORE</a>
+                        <Link
+                          className="btn-yellow"
+                          href={item.slug}
+                        >
+                          LEARN MORE
+                        </Link>
                       </div>
                     </div>
                   );

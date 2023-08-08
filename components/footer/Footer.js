@@ -56,13 +56,16 @@ function Footer() {
         <div className="footer_content section_padding1">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-5 col-sm-6">
                 <div className="footer_textwidget textwidget">
                   <h2>About Shenzhen HUAK </h2>
                   <p>
-                    At Shenzhen HUAK , We don’t just provide resi-dential and
-                    commercial heating and air conditioning services; we make
-                    people’s lives easier. Better.
+                    Shenzhen HUAK Testing Technology Co., Ltd (short name HUAK)
+                    is mainly engaged in product electromagnetic compatibility
+                    test, radio frequency test, SAR, safety, batteries, harmful
+                    substances, and finished products analysis tests (such as
+                    RoHS) and environmental reliability specialized third-party
+                    testing institutions for testing.
                   </p>
                   <Image
                     src="/assets/images/news3.png"
@@ -114,7 +117,7 @@ function Footer() {
                 {/*end .footer_link*/}
               </div>
               {/*end .col-md-2*/}
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-3 col-sm-6">
                 <div className="newslatter">
                   <h2>Newsletter</h2>
                   <input
