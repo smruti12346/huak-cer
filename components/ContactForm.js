@@ -57,10 +57,12 @@ function ContactForm() {
                 id="select"
               >
                 <option value="option0">Select Service</option>
-                <option value="option1">Service 1</option>
-                <option value="option2">Service 2</option>
-                <option value="option3">Service 3</option>
-                <option value="option4">Service 4</option>
+                <option value="option1">American Certification</option>
+                <option value="option2">Australian Certification Project</option>
+                <option value="option3">Certification Project of Asian</option>
+                <option value="option4">Certification project of China</option>
+                <option value="option4">EU Certification Project</option>
+                <option value="option4">Other Certification Projects</option>
               </select>
             </span>
             <button

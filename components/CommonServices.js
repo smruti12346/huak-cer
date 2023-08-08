@@ -14,6 +14,7 @@ async function CommonServices() {
   const [open1, setOpen1] = React.useState(false);
   const [count, setCOunt] = useState(0);
   const [url1, setUrl1] = useState("");
+  const [carouselAutoplay, setCarouselAutoplay] = useState(true); // Add state for controlling autoplay
   useEffect(() => {
     fetch(`${api_url}/pages?categories=11`)
       .then((res) => res.json())
@@ -28,6 +29,7 @@ async function CommonServices() {
         breakpoint: { max: 3000, min: 1024 },
         items: 4,
         partialVisibilityGutter: 40,
+        autoPlay: carouselAutoplay, // Use the state for controlling autoplay
       },
       tablet: {
         breakpoint: { max: 1024, min: 768 },
