@@ -138,30 +138,32 @@ function Footer() {
             {/*end .row*/}
             <div className="copyright_area">
               <div className="row">
-                <div className="col-md-8 col-sm-6 copyright_text">
-                  <p>© 2023 Huak-cer Developed by Digitalvate.</p>
+      <div className="col-md-4 col-sm-6">
+        <p className="foot">© 2023 Huak-cer</p>
                 </div>
-                {/*end .col-md-8*/}
-                <div className="col-md-4 col-sm-6 copyright_social text-right">
+      <div className="col-md-4 col-sm-6 text-center">
+        <p className="developed-by dark-text">Developed by Digitalvate.</p>
+      </div>
+      <div className="col-md-4 col-sm-6 social-icons text-right">
                   <ul>
                     <li>
                       <a href="#">
-                        <i className="fa fa-twitter" />
+              <i className="fa fa-twitter dark-icon" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-facebook" />
+              <i className="fa fa-facebook dark-icon" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-linkedin" />
+              <i className="fa fa-linkedin dark-icon" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-youtube-play" />
+              <i className="fa fa-youtube-play dark-icon" />
                       </a>
                     </li>
                   </ul>
