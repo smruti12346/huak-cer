@@ -147,22 +147,22 @@ function Footer() {
       <div className="col-md-4 col-sm-6 social-icons text-right">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="https://twitter.com/HuakShenzh18054" target="blank">
               <i className="fa fa-twitter dark-icon" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/shenzhenhuak" target="blank">
               <i className="fa fa-facebook dark-icon" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/company/shenzhen-huak/"  target="blank">
               <i className="fa fa-linkedin dark-icon" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.youtube.com/@ShenzhenHUAK" target="blank">
               <i className="fa fa-youtube-play dark-icon" />
                       </a>
                     </li>

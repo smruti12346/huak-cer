@@ -38,17 +38,17 @@ function TopNavbar() {
                 <div className="header_social text-right">
                   <ul className="hd_social_icons">
                     <li>
-                      <a href="#">
+                      <a href="https://twitter.com/HuakShenzh18054" target="blank">
                         <i className="fa fa-twitter" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/shenzhenhuak" target="blank">
                         <i className="fa fa-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.youtube.com/@ShenzhenHUAK" target="blank">
                         <i className="fa fa-youtube-play" />
                       </a>
                     </li>

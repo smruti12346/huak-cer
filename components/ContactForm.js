@@ -5,10 +5,27 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
-  first: Yup.string().required('Name is required*'),
-  email: Yup.string().email('Invalid email').required('Email is required*'),
-  phone: Yup.string().required('Phone number is required*'),
+ 
   service: Yup.string().required('Please select a service*'),
+  first: Yup
+.string()
+.trim()
+.required('*Name is required')
+.min(3, '*Name must be at least 3 characters')
+.max(50, '*Name can be at most 50 characters'),
+email:Yup
+.string()
+.trim()
+.required('*Email is required')
+.email('*Invalid email format')
+.max(100, '*Email can be at most 100 characters'),
+phone: Yup
+.string()
+.trim()
+.required('*Mobile number is required')
+.matches(/^[0-9]+$/, '*Mobile number must contain only digits')
+.min(10, '*Mobile number must be at least 10 digits')
+.max(15, '*Mobile number can be at most 15 digits'),
 });
 
 const ContactForm = () => {
@@ -16,7 +33,7 @@ const ContactForm = () => {
     try {
 
       const response = await axios.post(
-        "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/579/feedback",
+        "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/746/feedback",
         values,
         {
           headers: {
@@ -29,7 +46,7 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         console.log("Form data sent successfully!");
-        handleClose();
+       
       } else {
         console.error("Failed to send form data.");
       } resetForm();
@@ -72,16 +89,17 @@ const ContactForm = () => {
             email: '',
             phone: '',
             service: '',
-            wpCommentCookiesConsent: false,}}
+            id: '746',
+           }}
             validationSchema={validationSchema}
             onSubmit={handleSubmit}
           >
             
               <Form>
-                 <ErrorMessage name="name" component="div" style={{color:"red"}} className="error-message" />
+                 <ErrorMessage name="first" component="div" style={{color:"red"}} className="error-message" />
                 <Field
               type="text"
-                  name="name"
+                  name="first"
               placeholder="Your name"
                   className="half_width input_m_right"
                   

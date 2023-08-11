@@ -3320,6 +3320,8 @@ input.half_width {
   display: block;
   text-align: center;
   color: #fff;
+  font-weight: 200;
+  font-size: 16px;
 }
 
 
@@ -3333,6 +3335,8 @@ input.half_width {
 }
 .foot{
   color: #fff !important;
+  font-weight: 200;
+  font-size: 16px;
 }
 
 .social-icons ul li {
