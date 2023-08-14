@@ -3372,3 +3372,37 @@ input.half_width {
     object-fit: contain;
   }
 }
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.checkmark-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  margin-bottom: -29px;
+}
+
+.checkmark-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.heading1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.message {
+  font-size: 18px;
+  color: green;
+}
