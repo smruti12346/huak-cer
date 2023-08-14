@@ -5,6 +5,8 @@ import axios from "axios";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Router from "next/router";
 async function handleSubmit(values, { resetForm }) {
   try {
     const response = await axios.post(
@@ -49,7 +51,7 @@ const FormOne = ({ name }) => {
       [event.target.name]: event.target.value,
     }));
   };
-
+  //let route = useRouter();
   const handleSubmit = () => {
     setLoader(true);
     setMessage("");
@@ -68,6 +70,7 @@ const FormOne = ({ name }) => {
       )
       .then((data) => {
         setLoader(false);
+        window.location.href = `/thank-you?service=${name}`;
         data.data.status === "mail_sent" ? setSuccess(true) : setSuccess(false);
         data.data.status === "mail_sent"
           ? setForm({
