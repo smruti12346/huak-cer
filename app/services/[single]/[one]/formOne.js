@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form ,  Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Router from "next/router";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -13,64 +15,107 @@ const validationSchema = Yup.object().shape({
   message: Yup.string().required("Message is required"),
 });
 
+
+async function handleSubmit(values, { resetForm }) {
+  try {
+    const response = await axios.post(
+      "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/749/feedback",
+      values,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    );
+
+    if (response.status === 200) {
+      console.log("Form data sent successfully!");
+    } else {
+      console.error("Failed to send form data.");
+    }
+    resetForm();
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+
 const FormOne = ({ name }) => {
   const [loader, setLoader] = useState(false);
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const handleInput = (event) => {
+    setForm((prevState) => ({
+      ...prevState,
+      [event.target.name]: event.target.value,
+    }));
+  };
+  //let route = useRouter();
+  const handleSubmit = () => {
+    setLoader(true);
+    setMessage("");
+    let formData = new FormData();
+    formData.append("first", form.name);
+    formData.append("email", form.email);
+    formData.append("phone", form.phone);
+    formData.append("service", name);
+    formData.append("message", form.message);
+    console.log(formData);
 
-  const handleSubmit = async (values, { resetForm }) => {
-    try {
-      setLoader(true);
-      setMessage("");
-
-      const formData = new FormData();
-      formData.append("first", values.name);
-      formData.append("email", values.email);
-      formData.append("phone", values.phone);
-      formData.append("service", name);
-      formData.append("message", values.message);
-
-      const response = await axios.post(
+    axios
+      .post(
         "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/749/feedback",
         formData
-      );
-
-      if (response.status === 200) {
-        console.log("Form data sent successfully!");
-        setSuccess(true);
-        resetForm();
-      } else {
-        console.error("Failed to send form data.");
-        setSuccess(false);
-      }
-    } catch (error) {
-      console.error("An error occurred:", error);
-      setSuccess(false);
-    } finally {
-      setLoader(false);
-    }
+      )
+      .then((data) => {
+        setLoader(false);
+        window.location.href = `/thank-you?service=${name}`;
+        data.data.status === "mail_sent" ? setSuccess(true) : setSuccess(false);
+        data.data.status === "mail_sent"
+          ? setForm({
+              name: "",
+              email: "",
+              phone: "",
+              message: "",
+            })
+          : "";
+        setMessage(data.data.message);
+      });
   };
-
   return (
-    <div className="col-12 col-sm-12">
-      <section className="contact_form_area contact_us">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="contact-right contact_details">
-                <div className="hero-title-with-shape">
-                  <Link href="#scr">
-                    <h4 className="btn-yellow">Contact with us</h4>
-                  </Link>
-                  <h1>We offer 24/7 emergency service to all of our customers</h1>
+    <>
+      <div className="col-12 col-sm-12">
+        <section className="contact_form_area contact_us">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="contact-right contact_details">
+                  <div className="hero-title-with-shape">
+                    <Link href="#scr">
+                      <h4 className="btn-yellow">Contact with us</h4>
+                    </Link>
+                    <h1>
+                      We offer 24/7 emergency service to all of our customers
+                    </h1>
+                  </div>
+            
+                  <p>
+                    There are many variations of passages of new lorem ipsum
+                    available, but the majority have suffered.
+                  </p>
                 </div>
-                <p>
-                  There are many variations of passages of new lorem ipsum available, but the majority have suffered.
-                </p>
               </div>
-            </div>
-            <div className="col-md-12" id="scr">
-              <div className="contact-right contact-right-style-2 responsive_mt">
+              <div
+                className="col-md-12"
+                id="scr"
+              >
+                <div className="contact-right contact-right-style-2 responsive_mt">
                 <Formik
                   initialValues={{
                     name: "",
@@ -141,13 +186,14 @@ const FormOne = ({ name }) => {
                     </Form>
                   )}
                 </Formik>
-                <div style={{ marginTop: "20px" }}></div>
+                  <div style={{ marginTop: "20px" }}></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 

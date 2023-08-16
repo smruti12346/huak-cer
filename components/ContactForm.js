@@ -106,7 +106,7 @@ const ContactForm = () => {
                   
             />
                
-               <ErrorMessage name="email" component="div" style={{color:"red"}} className="error-message" />
+               <ErrorMessage name="email" component="div" style={{color:"red", marginTop:"-19px"}} className="error-message" />
                 <Field
                   type="email"
               name="email"
