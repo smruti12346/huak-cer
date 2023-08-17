@@ -166,6 +166,11 @@ function Footer() {
               <i className="fa fa-youtube-play dark-icon" />
                       </a>
                     </li>
+                    <li>
+                      <a href="https://www.instagram.com/shenzhenhuak/"  target="blank">
+                      <i class="fa fa-instagram dark-icon"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 {/*end .col-md-4*/}

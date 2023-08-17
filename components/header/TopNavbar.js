@@ -48,11 +48,21 @@ function TopNavbar() {
                       </a>
                     </li>
                     <li>
+                      <a href="https://www.linkedin.com/company/shenzhen-huak/" target="blank">
+                        <i className="fa fa-linkedin" />
+                      </a>
+                    </li>
+                    <li>
                       <a href="https://www.youtube.com/@ShenzhenHUAK" target="blank">
                         <i className="fa fa-youtube-play" />
                       </a>
                     </li>
-                    {/* <li><a href="#"><i className="fa fa-google-plus" /></a></li> */}
+                    <li>
+                      <a href="https://www.instagram.com/shenzhenhuak/" target="blank">
+                        <i className="fa fa-instagram" />
+                      </a>
+                    </li>
+                    
                   </ul>
                 </div>
                 {/*end .header_social*/}

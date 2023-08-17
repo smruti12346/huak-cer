@@ -3406,3 +3406,9 @@ input.half_width {
   font-size: 18px;
   color: green;
 }
+
+
+.social-icons ul
+{
+  margin-right: 24px;
+}
