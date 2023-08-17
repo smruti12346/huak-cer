@@ -88,6 +88,7 @@ const FormOne = ({ name }) => {
         setMessage(data.data.message);
       });
   };
+
   return (
     <>
       <div className="col-12 col-sm-12">
