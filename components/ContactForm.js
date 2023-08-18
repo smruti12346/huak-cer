@@ -1,8 +1,11 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import axios from "axios";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
 
 const validationSchema = Yup.object().shape({
  
@@ -29,6 +32,7 @@ phone: Yup
 });
 
 const ContactForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = async (values, { resetForm }) => {
     try {
 
@@ -46,7 +50,7 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         console.log("Form data sent successfully!");
-       
+        setIsSubmitted(true); 
       } else {
         console.error("Failed to send form data.");
       } resetForm();
@@ -57,6 +61,7 @@ const ContactForm = () => {
   // };
   return (
     <>
+     {/* <ToastContainer /> */}
       {/*===========================
         Start Contact Form
 ===========================*/}
@@ -141,15 +146,20 @@ const ContactForm = () => {
                 <option value="Other Certification Projects">Other Certification Projects</option>
               </Field>
            
-
+              {isSubmitted && (
+                <div className="success-message" style={{color:"green"}}>
+                  Form submitted successfully!
+                </div>
+              )}
             <button
                   type="submit"
                   
-              className="btn-yellow"
-                  
+              className="btn-yellow" 
                 > Submit Now
+                
 
             </button>
+            
               </Form>
           
           </Formik>

@@ -142,7 +142,7 @@ function Footer() {
         <p className="foot">© 2023 Huak-cer</p>
                 </div>
       <div className="col-md-4 col-sm-6 text-center">
-        <p className="developed-by dark-text">Developed by Digitalvate.</p>
+        <p className="developed-by dark-text">Developed by <a href="https://digitalvate.com/" target="blank"> Digitalvate</a></p>
       </div>
       <div className="col-md-4 col-sm-6 social-icons text-right">
                   <ul>
