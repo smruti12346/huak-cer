@@ -63,7 +63,7 @@ function LatestNews() {
 
           <Slider {...settings}>
             <div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -93,7 +93,7 @@ function LatestNews() {
                   </div>
                 </div>
               </div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -126,9 +126,9 @@ function LatestNews() {
               </div>
             </div>
             <div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
-                  <div className="col-md-4 center">
+                  <div className="col-md-4 ">
                     <div className="bl_share_img">
                       <Image
                         src="/assets/images/services/rcm-service.png"
@@ -160,7 +160,7 @@ function LatestNews() {
                   </div>
                 </div>
               </div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -196,7 +196,7 @@ function LatestNews() {
             </div>
 
             <div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -229,7 +229,7 @@ function LatestNews() {
                   </div>
                 </div>
               </div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -257,7 +257,7 @@ function LatestNews() {
             </div>
 
             <div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -287,7 +287,7 @@ function LatestNews() {
                   </div>
                 </div>
               </div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -320,7 +320,7 @@ function LatestNews() {
             </div>
 
             <div>
-              <div className="blog_share_box">
+              <div className="blog_share_box" style={{height: "auto"}}>
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="bl_share_img">
@@ -350,9 +350,9 @@ function LatestNews() {
                   </div>
                 </div>
               </div>
-              <div className="blog_share_box">
+              <div className="blog_share_box"style={{height: "auto"}}>
                 <div className="row">
-                  <div className="col-md-4 center">
+                  <div className="col-md-4">
                     <div className="bl_share_img">
                       <Image
                         src="/assets/images/services/fcc-service.png"

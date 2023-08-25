@@ -30,10 +30,10 @@ async function Page(props) {
     <>
       <section className="breadcrumb_section text-center section_padding">
         <ul className="breadcrumb">
-          <li>
+          {/* <li>
             <Link href="/">Home</Link>
           </li>
-          <li>Services</li>
+          <li>Services</li> */}
         </ul>
         <h1>{data[0].title?.rendered}</h1>
       </section>

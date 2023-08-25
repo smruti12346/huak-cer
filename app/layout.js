@@ -6,6 +6,7 @@ import "@/assets/css/font-awesome.min.css";
 import "@/assets/css/fontello.css";
 import "@/assets/css/animate.css";
 import "@/assets/css/responsive.css";
+
 import Script from "next/script";
 const Header = dynamic(() => import("@/components/header/Header"));
 const Footer = dynamic(() => import("@/components/footer/Footer"));
@@ -37,7 +38,6 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-4W7S589GPE');
         `}
         </Script>
-
         <Header />
         {children}
         <Footer />
