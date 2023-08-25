@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-4W7S589GPE');
         `}
         </Script>
+
         <Header />
         {children}
         <Footer />

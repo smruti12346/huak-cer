@@ -6,194 +6,442 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>https://huak-cer.com</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <loc>https://huak-cer.com/</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/about</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/news</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/contactus</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/american-certification/cpc-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/international-certification-project/cb-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/other-certification-projects/srrc-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/american-certification/fcc-certification-of-us</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project/ce-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project/rohs-testing</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project/reach-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/telec-certification-of-japan</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/american-certification/ic-certification-of-canada</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/american-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/australian-certification-project</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-china</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/other-certification-projects</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/blog-details.html</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/american-certification/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/american-certification/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/international-certification-project/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/international-certification-project/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/other-certification-projects/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/other-certification-projects/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/eu-certification-project/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/eu-certification-project/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/certification-project-of-asian/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/certification-project-of-asian/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/american-certification?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/australian-certification-project/rcm-certification-of-australia</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/australian-certification-project/saa-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/australian-certification-project?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/kc-certification-of-korea</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/wpc-certification-of-india</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/bis-certification-of-india</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/vcci-certification-of-japan</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian/pse-certification-of-japan</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-asian?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-china/ncc-certification-of-taiwan</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-china/srrc-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-china/ccc-certification</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/certification-project-of-china?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project/en71-certification-of-toys</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/eu-certification-project?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/other-certification-projects/cb-certification-2</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://huak-cer.com/services/other-certification-projects?show=other</loc>
-  <lastmod>2023-07-28T12:45:23+00:00</lastmod>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
   <priority>0.51</priority>
 </url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=prop-65</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=cec-doe-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=ul-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=etl-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=ccpsa</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=ices-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/australian-certification-project/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/australian-certification-project/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=australian-toy-testing</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=australian-food-contact-material-test</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=gems-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=thailand-ntc-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=japan-jate-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=india-wpc-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=singapore-imda-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/certification-project-of-china/services</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/services/certification-project-of-china/contactus</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=china-lfgb-testing</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=hong-kong-ofca-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=cqc-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=cta-network-access-license-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=german-lfgb-food-contact-material-test</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=european-tests-for-food-contact-materials</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=russian-cu-tr-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=tuv-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=german-gs-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=erp-energy-efficiency-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=bluetooth-bqb-authentication</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=egyptian-ntra-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=battery-gb31241-test</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=iec-62133-test</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=un38-3-authentication</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=battery-msds-report</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=saudi-arabia-saso-certification-saso-2870-saso-2902</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=wercsmart-sign-up</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://huak-cer.com/contactus?name=nigeria-soncap-certification</loc>
+  <lastmod>2023-08-25T10:07:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
 </urlset>

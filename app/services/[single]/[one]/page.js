@@ -35,7 +35,7 @@ async function Page(props) {
           </li>
           <li>Services</li>
         </ul>
-        <h1>Our services</h1>
+        <h1>{data[0].title?.rendered}</h1>
       </section>
       <div className="col-12 col-sm-12">
         <div className="service_style_3_area text-center section_padding one-section">
