@@ -29,15 +29,10 @@ async function Page(props) {
   return (
     <>
       <section className="breadcrumb_section text-center section_padding">
-        <ul className="breadcrumb">
-          {/* <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>Services</li> */}
-        </ul>
+     
         <h1> {data[0].title?.rendered}</h1>
       </section>
-      <div className="col-12 col-sm-12">
+      <div className="col-12 col-sm-12"> 
         <div className="service_style_3_area text-center section_padding one-section">
           <div className="container">
             <div className="row">

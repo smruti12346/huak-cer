@@ -1,4 +1,5 @@
 import News from "@/components/news/News";
+import Link from "next/link";
 
 export const metadata = {
   title: "News - Shenzhen HUAK",
@@ -11,6 +12,7 @@ export const metadata = {
 const Page = () => {
   return (
     <div>
+      <Link href={`/news/${item.slug}`}></Link>
       <News />
     </div>
   );

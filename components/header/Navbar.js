@@ -109,7 +109,12 @@ function Navbar() {
                     <Link href="/labintroduction">Lab Introduction</Link>
                   </li> */}
                   <li>
-                    <Link href="/news">News</Link>
+                    <Link href="/blog">News</Link>
+                    {/* <ul className="dropdown-menu">
+                    <li>
+                    <Link href="">Blog</Link>
+                  </li>
+                    </ul> */}
                   </li>
                   <li>
                     <Link href="/contactus">Contact Us</Link>
