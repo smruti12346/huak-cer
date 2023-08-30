@@ -15,10 +15,10 @@ const getData = async (slug) => {
 export async function generateMetadata({ params }) {
   const product = await getData(params.one);
   return {
-    title: product?.[0]?.acf?.meta_title || "Default Title",
+    title: product[0]?.acf?.meta_title || "Default Title",
     openGraph: {
-      title: product?.[0]?.acf?.meta_title || "Default Title",
-      description: product?.[0]?.acf?.meta_description || "",
+      title: product[0]?.acf?.meta_title || "Default Title",
+      description: product[0]?.acf?.meta_description || "",
     },
   };
 }
@@ -29,10 +29,9 @@ async function Page(props) {
   return (
     <>
       <section className="breadcrumb_section text-center section_padding">
-     
         <h1> {data[0].title?.rendered}</h1>
       </section>
-      <div className="col-12 col-sm-12"> 
+      <div className="col-12 col-sm-12">
         <div className="service_style_3_area text-center section_padding one-section">
           <div className="container">
             <div className="row">

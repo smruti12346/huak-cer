@@ -2323,11 +2323,11 @@ iframe {
   height: 100%;
 }
 .bl_share_img .blog_date {
-  width: 57px;
-  height: 55px;
+  width: auto;
+  height: auto;
   display: inline-block;
   background: #fff;
-  position: absolute;
+  position: static;
   left: 0;
   bottom: 0;
   text-align: center;
@@ -3407,13 +3407,9 @@ input.half_width {
   color: green;
 }
 
-
-.social-icons ul
-{
+.social-icons ul {
   margin-right: 24px;
 }
-.breadcrumb_section
-{
-  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 40%)
+.breadcrumb_section {
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 40%);
 }
-
