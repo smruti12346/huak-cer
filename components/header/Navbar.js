@@ -120,12 +120,12 @@ function Navbar() {
                     <Link href="/contactus">Contact Us</Link>
                   </li>
                   <li className="header_right_btn">
-                    <a
+                    <Link
                       className="btn-yellow"
-                      href="#"
+                      href="/contactus"
                     >
                       Get a Quote
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
