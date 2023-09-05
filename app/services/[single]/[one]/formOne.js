@@ -1,25 +1,24 @@
 "use client";
-import { Formik, Form ,  Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import Router from "next/router";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
-  email: Yup.string().email("Invalid email address").required("Email is required"),
+  email: Yup.string()
+    .email("Invalid email address")
+    .required("Email is required"),
   phone: Yup.string().required("Phone number is required"),
   message: Yup.string().required("Message is required"),
 });
 
-
 async function handleSubmit(values, { resetForm }) {
   try {
     const response = await axios.post(
-      "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/749/feedback",
+      "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/749/feedback",
       values,
       {
         headers: {
@@ -38,7 +37,6 @@ async function handleSubmit(values, { resetForm }) {
     console.error("An error occurred:", error);
   }
 }
-
 
 const FormOne = ({ name }) => {
   const [loader, setLoader] = useState(false);
@@ -70,7 +68,7 @@ const FormOne = ({ name }) => {
 
     axios
       .post(
-        "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/749/feedback",
+        "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/749/feedback",
         formData
       )
       .then((data) => {
@@ -105,7 +103,7 @@ const FormOne = ({ name }) => {
                       We offer 24/7 emergency service to all of our customers
                     </h1>
                   </div>
-            
+
                   <p>
                     There are many variations of passages of new lorem ipsum
                     available, but the majority have suffered.
@@ -117,76 +115,97 @@ const FormOne = ({ name }) => {
                 id="scr"
               >
                 <div className="contact-right contact-right-style-2 responsive_mt">
-                <Formik
-                  initialValues={{
-                    name: "",
-                    email: "",
-                    phone: "",
-                    message: "",
-                  }}
-                  validationSchema={validationSchema}
-                  onSubmit={handleSubmit}
-                >
-                  {({ isSubmitting }) => (
-                    <Form>
-                          <ErrorMessage name="name" component="div" className="text-danger"   style={{ textAlign: "left" }}  />
-                      <Field
-                        className="half_width input_m_right"
-                        type="text"
-                        name="name"
-                        placeholder="Your name"
-                      />
-                  
-                  <ErrorMessage name="email" component="div" className="text-danger"   style={{ textAlign: "left" , marginTop:"-19px" }}/>
-                      <Field
-                        className="half_width"
-                        type="email"
-                        name="email"
-                        placeholder="Email address"
-                      />
-                     
-                     <ErrorMessage name="phone" component="div" className="text-danger"   style={{ textAlign: "left" }} />
-                      <Field
-                        type="tel"
-                        name="phone"
-                        placeholder="Phone number"
-                      />
-                      
-                      <ErrorMessage name="message" component="div" className="text-danger"   style={{ textAlign: "left" }}/>
-                      <Field
-                        as="textarea"
-                        name="message"
-                        id="content"
-                        cols={20}
-                        rows={5}
-                        placeholder="Write message"
-                      />
-                      
+                  <Formik
+                    initialValues={{
+                      name: "",
+                      email: "",
+                      phone: "",
+                      message: "",
+                    }}
+                    validationSchema={validationSchema}
+                    onSubmit={handleSubmit}
+                  >
+                    {({ isSubmitting }) => (
+                      <Form>
+                        <ErrorMessage
+                          name="name"
+                          component="div"
+                          className="text-danger"
+                          style={{ textAlign: "left" }}
+                        />
+                        <Field
+                          className="half_width input_m_right"
+                          type="text"
+                          name="name"
+                          placeholder="Your name"
+                        />
 
-                      <h4 className={success ? "text-success" : "text-danger"}>
-                        {message}
-                      </h4>
-                      <button
-                        className="btn-yellow"
-                        type="submit"
-                        disabled={loader || isSubmitting}
-                      >
-                        {loader ? (
-                          <Image
-                            src="/assets/images/loader6.gif"
-                            width={30}
-                            height={30}
-                            alt="loader"
-                            style={{ marginRight: "10px" }}
-                          />
-                        ) : (
-                          ""
-                        )}
-                        SUBMIT NOW
-                      </button>
-                    </Form>
-                  )}
-                </Formik>
+                        <ErrorMessage
+                          name="email"
+                          component="div"
+                          className="text-danger"
+                          style={{ textAlign: "left", marginTop: "-19px" }}
+                        />
+                        <Field
+                          className="half_width"
+                          type="email"
+                          name="email"
+                          placeholder="Email address"
+                        />
+
+                        <ErrorMessage
+                          name="phone"
+                          component="div"
+                          className="text-danger"
+                          style={{ textAlign: "left" }}
+                        />
+                        <Field
+                          type="tel"
+                          name="phone"
+                          placeholder="Phone number"
+                        />
+
+                        <ErrorMessage
+                          name="message"
+                          component="div"
+                          className="text-danger"
+                          style={{ textAlign: "left" }}
+                        />
+                        <Field
+                          as="textarea"
+                          name="message"
+                          id="content"
+                          cols={20}
+                          rows={5}
+                          placeholder="Write message"
+                        />
+
+                        <h4
+                          className={success ? "text-success" : "text-danger"}
+                        >
+                          {message}
+                        </h4>
+                        <button
+                          className="btn-yellow"
+                          type="submit"
+                          disabled={loader || isSubmitting}
+                        >
+                          {loader ? (
+                            <Image
+                              src="/assets/images/loader6.gif"
+                              width={30}
+                              height={30}
+                              alt="loader"
+                              style={{ marginRight: "10px" }}
+                            />
+                          ) : (
+                            ""
+                          )}
+                          SUBMIT NOW
+                        </button>
+                      </Form>
+                    )}
+                  </Formik>
                   <div style={{ marginTop: "20px" }}></div>
                 </div>
               </div>

@@ -1,47 +1,40 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import axios from "axios";
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
-
 const validationSchema = Yup.object().shape({
- 
-  service: Yup.string().required('Please select a service*'),
-  first: Yup
-.string()
-.trim()
-.required('*Name is required')
-.min(3, '*Name must be at least 3 characters')
-.max(50, '*Name can be at most 50 characters'),
-email:Yup
-.string()
-.trim()
-.required('*Email is required')
-.email('*Invalid email format')
-.max(100, '*Email can be at most 100 characters'),
-phone: Yup
-.string()
-.trim()
-.required('*Mobile number is required')
-.matches(/^[0-9]+$/, '*Mobile number must contain only digits')
-.min(10, '*Mobile number must be at least 10 digits')
-.max(15, '*Mobile number can be at most 15 digits'),
+  service: Yup.string().required("Please select a service*"),
+  first: Yup.string()
+    .trim()
+    .required("*Name is required")
+    .min(3, "*Name must be at least 3 characters")
+    .max(50, "*Name can be at most 50 characters"),
+  email: Yup.string()
+    .trim()
+    .required("*Email is required")
+    .email("*Invalid email format")
+    .max(100, "*Email can be at most 100 characters"),
+  phone: Yup.string()
+    .trim()
+    .required("*Mobile number is required")
+    .matches(/^[0-9]+$/, "*Mobile number must contain only digits")
+    .min(10, "*Mobile number must be at least 10 digits")
+    .max(15, "*Mobile number can be at most 15 digits"),
 });
 
 const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = async (values, { resetForm }) => {
     try {
-
       const response = await axios.post(
-        "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/746/feedback",
+        "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/746/feedback",
         values,
         {
           headers: {
-            
             // "Content-Type": "application/json",
             "Content-Type": "multipart/form-data",
           },
@@ -50,18 +43,19 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         console.log("Form data sent successfully!");
-        setIsSubmitted(true); 
+        setIsSubmitted(true);
       } else {
         console.error("Failed to send form data.");
-      } resetForm();
+      }
+      resetForm();
     } catch (error) {
       console.error("An error occurred:", error);
     }
-    };
+  };
   // };
   return (
     <>
-     {/* <ToastContainer /> */}
+      {/* <ToastContainer /> */}
       {/*===========================
         Start Contact Form
 ===========================*/}
@@ -89,79 +83,105 @@ const ContactForm = () => {
             <h1>To request a service call, please fill out the form below</h1>
           </div>
           {/*end .hero-title-width-shape*/}
-         <Formik
-            initialValues={{first: '',
-            email: '',
-            phone: '',
-            service: '',
-            id: '746',
-           }}
+          <Formik
+            initialValues={{
+              first: "",
+              email: "",
+              phone: "",
+              service: "",
+              id: "746",
+            }}
             validationSchema={validationSchema}
             onSubmit={handleSubmit}
           >
-            
-              <Form>
-                 <ErrorMessage name="first" component="div" style={{color:"red"}} className="error-message" />
-                <Field
-              type="text"
-                  name="first"
-              placeholder="Your name"
-                  className="half_width input_m_right"
-                  
-                  
-            />
-               
-               <ErrorMessage name="email" component="div" style={{color:"red", marginTop:"-19px"}} className="error-message" />
-                <Field
-                  type="email"
-              name="email"
-              placeholder="Email address"
-                  className="half_width "
-                 
-                
-            />
-               
-               <ErrorMessage name="phone" component="div" style={{color:"red"}} className="error-message" />
-                <Field
-              type="tel"
-                  name="phone"
-              placeholder="Phone number"
-                
-                
-            />
-              
-              <ErrorMessage name="service" component="div" style={{color:"red"}} className="error-message" />
-                <Field
+            <Form>
+              <ErrorMessage
+                name="first"
+                component="div"
+                style={{ color: "red" }}
+                className="error-message"
+              />
+              <Field
+                type="text"
+                name="first"
+                placeholder="Your name"
+                className="half_width input_m_right"
+              />
+
+              <ErrorMessage
+                name="email"
+                component="div"
+                style={{ color: "red", marginTop: "-19px" }}
+                className="error-message"
+              />
+              <Field
+                type="email"
+                name="email"
+                placeholder="Email address"
+                className="half_width "
+              />
+
+              <ErrorMessage
+                name="phone"
+                component="div"
+                style={{ color: "red" }}
+                className="error-message"
+              />
+              <Field
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+              />
+
+              <ErrorMessage
+                name="service"
+                component="div"
+                style={{ color: "red" }}
+                className="error-message"
+              />
+              <Field
                 as="select"
                 name="service"
                 id="select"
                 className="select_icon"
               >
                 <option value="">Select Service</option>
-                <option value="American Certification">American Certification</option>
-                <option value="Australian Certification Project">Australian Certification Project</option>
-                <option value="Certification Project of Asian">Certification Project of Asian</option>
-                <option value="Certification Project of China">Certification Project of China</option>
-                <option value="EU Certification Project">EU Certification Project</option>
-                <option value="Other Certification Projects">Other Certification Projects</option>
+                <option value="American Certification">
+                  American Certification
+                </option>
+                <option value="Australian Certification Project">
+                  Australian Certification Project
+                </option>
+                <option value="Certification Project of Asian">
+                  Certification Project of Asian
+                </option>
+                <option value="Certification Project of China">
+                  Certification Project of China
+                </option>
+                <option value="EU Certification Project">
+                  EU Certification Project
+                </option>
+                <option value="Other Certification Projects">
+                  Other Certification Projects
+                </option>
               </Field>
-           
+
               {isSubmitted && (
-                <div className="success-message" style={{color:"green"}}>
+                <div
+                  className="success-message"
+                  style={{ color: "green" }}
+                >
                   Form submitted successfully!
                 </div>
               )}
-            <button
-                  type="submit"
-                  
-              className="btn-yellow" 
-                > Submit Now
-                
-
-            </button>
-            
-              </Form>
-          
+              <button
+                type="submit"
+                className="btn-yellow"
+              >
+                {" "}
+                Submit Now
+              </button>
+            </Form>
           </Formik>
         </div>
         {/*end .contact_form_width*/}
@@ -172,6 +192,6 @@ const ContactForm = () => {
 ===========================*/}
     </>
   );
-}
+};
 
 export default ContactForm;

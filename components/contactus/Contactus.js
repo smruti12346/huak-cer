@@ -31,7 +31,7 @@ function Contactus(props) {
 
     axios
       .post(
-        "https://huak-api.thecbdworld.org/wp-json/contact-form-7/v1/contact-forms/579/feedback",
+        "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/579/feedback",
         formData
       )
       .then((data) => {

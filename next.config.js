@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["huak-api.thecbdworld.org"],
+    domains: ["api.huak-cer.com"],
   },
   eslint: {
     ignoreDuringBuilds: true,
