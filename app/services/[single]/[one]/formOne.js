@@ -48,23 +48,24 @@ const FormOne = ({ name }) => {
     phone: "",
     message: "",
   });
-  const handleInput = (event) => {
+  const handleChange = (event) => {
     setForm((prevState) => ({
       ...prevState,
       [event.target.name]: event.target.value,
     }));
   };
   //let route = useRouter();
-  const handleSubmit = () => {
+  const handleSubmit = (values) => {
+    //console.log(values);
     setLoader(true);
     setMessage("");
     let formData = new FormData();
-    formData.append("first", form.name);
-    formData.append("email", form.email);
-    formData.append("phone", form.phone);
+    formData.append("first", values.name);
+    formData.append("email", values.email);
+    formData.append("phone", values.phone);
     formData.append("service", name);
-    formData.append("message", form.message);
-    console.log(formData);
+    formData.append("message", values.message);
+    //console.log(formData);
 
     axios
       .post(
@@ -73,7 +74,9 @@ const FormOne = ({ name }) => {
       )
       .then((data) => {
         setLoader(false);
-        window.location.href = `/thank-you?service=${name}`;
+        if (data.data.status === "mail_sent") {
+          window.location.href = `/thank-you?service=${name}`;
+        }
         data.data.status === "mail_sent" ? setSuccess(true) : setSuccess(false);
         data.data.status === "mail_sent"
           ? setForm({
