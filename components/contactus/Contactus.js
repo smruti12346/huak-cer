@@ -36,6 +36,9 @@ function Contactus(props) {
       )
       .then((data) => {
         setLoader(false);
+        if (data.data.status === "mail_sent") {
+          window.location.href = `/thank-you?service=${name}`;
+        }
         data.data.status === "mail_sent" ? setSuccess(true) : setSuccess(false);
         data.data.status === "mail_sent"
           ? setForm({
