@@ -54,12 +54,12 @@ function TopNavbar() {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/@ShenzhenHUAK" target="blank">
+                      <a href="https://www.youtube.com/channel/UCkDN0yIFQflpKSp0quKAurw" target="blank">
                         <i className="fa fa-youtube-play" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/shenzhenhuak/" target="blank">
+                      <a href="https://www.instagram.com/shenzhenhuaklab/" target="blank">
                         <i className="fa fa-instagram" />
                       </a>
                     </li>
