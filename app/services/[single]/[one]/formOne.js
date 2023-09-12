@@ -4,7 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import Link from "next/link";
-import Select from "react-select"; // Import the react-select component
+import Select from "react-select";
+import Image from 'next/image'; // Import the react-select component
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -333,7 +334,7 @@ const FormOne = ({ name }) => {
                         style={{ textAlign: "left" }}
                       />
                       <Field
-                       className="half_width input_m_right"
+                       
                         type="tel"
                         name="phone"
                         placeholder="Phone number"
@@ -342,7 +343,7 @@ const FormOne = ({ name }) => {
                       {/* <div className="form-group"> */}
                         
                         <Select
-                         className="half_width"
+                         
                           name="country"
                           value={selectedCountry}
                           onChange={handleCountryChange}
