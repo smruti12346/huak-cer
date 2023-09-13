@@ -85,9 +85,9 @@ function Contactus(props) {
                       </p>
                       <div className="contact_location_box">
                         <div
-                          className="contact_location_map"
-                          style={{ width: "100%" }}
-                        >
+                          className="contact_location_map" 
+                          style={{ width: "100%", padding:"40px 20px !important"  }}
+                          >
                           <span className="icon-location" />
                           <p>
                             Address：1-2F, B2 Building, Junfeng Zhongcheng
@@ -97,7 +97,7 @@ function Contactus(props) {
                           </p>
                         </div>
                         {/*end .contact_location_map*/}
-                        <div className="contact_location_map contact_location_call">
+                        <div className="contact_location_map contact_location_call"  style={{ padding:"40px 20px !important"  }}>
                           <span className="icon-contact_call" />
                           <p>
                             patty@cer-mark.com
