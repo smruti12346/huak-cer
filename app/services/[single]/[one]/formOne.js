@@ -299,7 +299,7 @@ const FormOne = ({ name }) => {
                   onSubmit={handleSubmit}
                 >
                   {({ isSubmitting }) => (
-                    <Form>
+                    <Form style={{border:"2px solid #c5c5c5", padding: "12px"}}>
                       <ErrorMessage
                         name="name"
                         component="div"
@@ -325,34 +325,35 @@ const FormOne = ({ name }) => {
                         name="email"
                         placeholder="Email address"
                       />
+                      
 
+                      <div className="row">
+                    <div className="col-md-6">
+                      {/* Phone Field */}
                       <ErrorMessage
-                        
                         name="phone"
                         component="div"
                         className="text-danger "
                         style={{ textAlign: "left" }}
                       />
                       <Field
-                       
                         type="tel"
                         name="phone"
                         placeholder="Phone number"
+                       
                       />
-
-                      {/* <div className="form-group"> */}
-                        
-                        <Select
-                         
-                          name="country"
-                          value={selectedCountry}
-                          onChange={handleCountryChange}
-                          options={countryOptions}
-                          placeholder="Select a country"
-                        />
-                        
-                      {/* </div> */}
-
+                    </div>
+                    <div className="col-md-6">
+                      {/* Country Field */}
+                      <Select
+                        name="country"
+                        value={selectedCountry}
+                        onChange={handleCountryChange}
+                        options={countryOptions}
+                        placeholder="Select a country"
+                      />
+                    </div>
+                  </div>
                       <ErrorMessage
                         name="message"
                         component="div"

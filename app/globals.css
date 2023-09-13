@@ -3433,3 +3433,27 @@ input.half_width {
 .get-quote-button:hover {
   background-color: #0056b3; /* Button background color on hover */
 }
+.contact_us .contact-right input
+{
+  background: #d5d5d5 !important;
+  color: #141414 !important;
+}
+.contact_us .contact-right textarea
+{
+  background: #d5d5d5 !important;
+  color: #141414;
+}
+.css-1fdsijx-ValueContainer
+{
+  background: #d5d5d5 !important;
+  color: #141414; 
+}
+.css-13cymwt-control
+{
+  padding: 8px !important;
+  background-color: #d5d5d5 !important;
+}
+.css-1xc3v61-indicatorContainer
+{
+  color:#424242 ;
+}
