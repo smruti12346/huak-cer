@@ -32,7 +32,7 @@ function TopNavbar() {
                     </li>
                     <li>
                       <i className="fa fa-whatsapp"></i>{" "}
-                      <a href="https://wa.me/+86-135-28437881">+86-135-28437881</a>
+                      <a href="https://api.whatsapp.com/send?phone=8613528437881">+86-135-28437881</a>
                     </li>
                   </ul>
                 </div>

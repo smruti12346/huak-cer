@@ -113,7 +113,7 @@ function Contactus(props) {
                     {/*end .contact-right .contact_details*/}
                   </div>
                   {/*end .col-md-6*/}
-                  <div className="col-md-6">
+                  <div className="col-md-6" style={{border:'2px solid #D5D5D5', padding:'12px'}}>
                     <div className="contact-right contact-right-style-2 responsive_mt">
                       <form
                         action="#"
