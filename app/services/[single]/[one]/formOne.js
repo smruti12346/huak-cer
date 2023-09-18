@@ -351,6 +351,7 @@ const FormOne = ({ name }) => {
                         onChange={handleCountryChange}
                         options={countryOptions}
                         placeholder="Select a country"
+                        required
                       />
                     </div>
                   </div>
