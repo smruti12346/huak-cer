@@ -397,6 +397,7 @@ function Contactus(props) {
                             name="message"
                             id="content"
                             placeholder="Write message"
+                            rows="7" 
                           />
                           
                           <button
