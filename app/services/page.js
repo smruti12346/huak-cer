@@ -7,10 +7,13 @@ export const metadata = {
     description:
       "Browse our diverse certification services at Shenzhen HUAK. We deliver excellence in compliance and quality assurance for various sectors and standards.",
   },
+  
 };
+
 const Page = () => {
   return (
     <div>
+    
       <Services />
     </div>
   );

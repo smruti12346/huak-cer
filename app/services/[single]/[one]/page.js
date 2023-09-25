@@ -4,13 +4,14 @@ import { api_url } from "@/Auth";
 import FormOne from "./formOne";
 import Image from "next/image";
 import { url } from "@/Auth";
-const getData = async (slug) => {
+
+async function getData(slug) {
   const res = await fetch(`${api_url}/pages?slug=${slug}`, {
     next: { revalidate: 2 },
   });
   const data = await res.json();
   return data;
-};
+}
 
 export async function generateMetadata({ params }) {
   const product = await getData(params.one);
@@ -21,6 +22,12 @@ export async function generateMetadata({ params }) {
       description: product[0]?.acf?.meta_description || "",
     },
   };
+}
+function scrollToQuoteSection() {
+  const quoteSection = document.getElementById("quoteSection");
+  if (quoteSection) {
+    quoteSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 async function Page(props) {
@@ -117,12 +124,19 @@ async function Page(props) {
                       __html: data[0].content.rendered,
                     }}
                   ></div>
-                  <FormOne name={props.params.one} />
+                  <div id="callform">
+                    <FormOne name={props.params.one} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="floating-button">
+       <a href="#callform"> 
+        <button className="get-quote-button">Get a Quote</button>
+      </a>
       </div>
     </>
   );
