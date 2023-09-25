@@ -37,6 +37,7 @@ const Page = async (props) => {
   console.log(data);
   return (
     <div>
+      
       <section className="breadcrumb_section text-center section_padding">
         <ul className="breadcrumb">
           <li>
@@ -47,7 +48,7 @@ const Page = async (props) => {
         <h1>Our services</h1>
       </section>
       <section
-        className="blog_share_area"
+        className="blog_share_area "
         style={{ margin: "30px 0px" }}
       >
         <div className="container">
@@ -71,7 +72,7 @@ const Page = async (props) => {
                           : `/services/${slug}/${item.slug}`
                       }
                     >
-                      <div className="blog_share_box">
+                      <div className="blog_share_box blog_share_box12">
                         <div className="row">
                           <div
                             className="col-md-4"
@@ -131,7 +132,7 @@ const Page = async (props) => {
             {show != "other" ? (
               <div className="col-md-6">
                 <Link href={`/services/${slug}?show=other`}>
-                  <div className="blog_share_box">
+                  <div className="blog_share_box  blog_share_box12">
                     <div
                       className="row"
                       style={{ alignItems: "center", justifyContent: "center" }}

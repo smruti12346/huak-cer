@@ -305,6 +305,8 @@ const FormOne = ({ name }) => {
                     <Form
                       style={{ border: "2px solid #c5c5c5", padding: "12px" }}
                     >
+                       <div className="row">
+                        <div className="col-md-6">
                       <ErrorMessage
                         name="name"
                         component="div"
@@ -312,12 +314,13 @@ const FormOne = ({ name }) => {
                         style={{ textAlign: "left" }}
                       />
                       <Field
-                        className="half_width input_m_right"
+                        className=""
                         type="text"
                         name="name"
                         placeholder="Your name"
                       />
-
+                       </div>
+                      <div className="col-md-6">
                       <ErrorMessage
                         name="email"
                         component="div"
@@ -325,11 +328,20 @@ const FormOne = ({ name }) => {
                         style={{ textAlign: "left", marginTop: "-19px" }}
                       />
                       <Field
-                        className="half_width"
+                        className=""
                         type="email"
                         name="email"
                         placeholder="Email address"
                       />
+
+                      </div>
+                      </div>
+
+
+
+
+
+
 
                       <div className="row">
                         <div className="col-md-6">
@@ -358,6 +370,15 @@ const FormOne = ({ name }) => {
                           />
                         </div>
                       </div>
+
+
+
+
+
+
+
+                      <div className="row" style={{paddingTop:'12px'}}>
+                      <div className="col-md-12">
                       <ErrorMessage
                         name="message"
                         component="div"
@@ -372,6 +393,8 @@ const FormOne = ({ name }) => {
                         rows={5}
                         placeholder="Write message"
                       />
+                      </div>
+                      </div>
 
                       <h4 className={success ? "text-success" : "text-danger"}>
                         {message}
