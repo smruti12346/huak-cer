@@ -57,7 +57,7 @@ const Banner = () => {
                 </h1>
                 <div className="slide_button">
                   <a
-                    href="#"
+                    href="/contactus"
                     className="btn-yellow"
                   >
                     GET A FREE QUOTE
@@ -77,7 +77,7 @@ const Banner = () => {
                 </h1>
                 <div className="slide_button">
                   <a
-                    href="#"
+                    href="/contactus"
                     className="btn-yellow"
                   >
                     GET A FREE QUOTE
@@ -97,7 +97,7 @@ const Banner = () => {
                 </h1>
                 <div className="slide_button">
                   <a
-                    href="#"
+                    href="/contactus"
                     className="btn-yellow"
                   >
                     GET A FREE QUOTE
