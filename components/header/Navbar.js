@@ -193,7 +193,7 @@ function Navbar() {
           </p>
           <p className="text-center">
             <Link
-              href="/news"
+              href="/blog"
               onClick={handleMenu}
             >
               News

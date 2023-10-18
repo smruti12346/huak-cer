@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 const Banner = dynamic(() => import("@/components/header/Banner"));
 const Downbanner = dynamic(() => import("@/components/Downbanner"));
 const About = dynamic(() => import("@/components/About"));

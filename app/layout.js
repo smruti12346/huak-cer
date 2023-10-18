@@ -8,16 +8,26 @@ import "@/assets/css/animate.css";
 import "@/assets/css/responsive.css";
 
 import Script from "next/script";
+import Head from "next/head";
 const Header = dynamic(() => import("@/components/header/Header"));
 const Footer = dynamic(() => import("@/components/footer/Footer"));
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shenzhen HUAK - Certification Services",
+  description:
+    "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
   openGraph: {
     title: "Shenzhen HUAK - Certification Services",
     description:
       "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
+    locale: "en_US",
+    type: "website",
+    url: "https://huak-cer.com",
+    site_name: "Huak-cer",
+  },
+  alternates: {
+    canonical: "https://huak-cer.com",
   },
 };
 

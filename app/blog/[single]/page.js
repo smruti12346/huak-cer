@@ -15,6 +15,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: product[0]?.acf?.meta_title || "Default Title",
       description: product[0]?.acf?.meta_description || "",
+      locale: "en_US",
+      type: "website",
+      url: `https://huak-cer.com/blog/${params.single}`,
+      site_name: "Huak-cer",
+    },
+    alternates: {
+      canonical: `https://huak-cer.com/blog/${params.single}`,
     },
   };
 }

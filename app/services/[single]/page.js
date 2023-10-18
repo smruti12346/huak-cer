@@ -26,6 +26,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
     openGraph: {
       title: product[0].acf?.meta_title,
       description: product[0].acf?.meta_description,
+      locale: "en_US",
+      type: "website",
+      url: `https://huak-cer.com/services/${params.single}`,
+      site_name: "Huak-cer",
+    },
+    alternates: {
+      canonical: `https://huak-cer.com/services/${params.single}`,
     },
   };
 }
@@ -37,7 +44,6 @@ const Page = async (props) => {
   console.log(data);
   return (
     <div>
-      
       <section className="breadcrumb_section text-center section_padding">
         <ul className="breadcrumb">
           <li>
@@ -171,7 +177,6 @@ const Page = async (props) => {
             )}
           </div>
         </div>
-    
       </section>
     </div>
   );

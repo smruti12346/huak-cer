@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: product[0]?.acf?.meta_title || "Default Title",
       description: product[0]?.acf?.meta_description || "",
+      locale: "en_US",
+      type: "website",
+      site_name: "Huak-cer",
     },
   };
 }
@@ -134,9 +137,9 @@ async function Page(props) {
         </div>
       </div>
       <div className="floating-button">
-       <a href="#callform"> 
-        <button className="get-quote-button">Get a Quote</button>
-      </a>
+        <a href="#callform">
+          <button className="get-quote-button">Get a Quote</button>
+        </a>
       </div>
     </>
   );
