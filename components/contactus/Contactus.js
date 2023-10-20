@@ -285,10 +285,7 @@ function Contactus(props) {
                           customers
                         </h1>
                       </div>
-                      <p>
-                        There are many variations of passages of new lorem ipsum
-                        available, but the majority have suffered.
-                      </p>
+                      
                       <div className="contact_location_box">
                         <div
                           className="contact_location_map"

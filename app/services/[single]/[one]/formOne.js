@@ -279,10 +279,7 @@ const FormOne = ({ name }) => {
                   </h1>
                 </div>
 
-                <p>
-                  There are many variations of passages of new lorem ipsum
-                  available, but the majority have suffered.
-                </p>
+                
               </div>
             </div>
             <div
