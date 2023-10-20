@@ -105,9 +105,9 @@ async function CommonServices() {
                         />
                       </div>
                       <div className="service_details">
-                        <a href="#">
+                        
                           <h2>{item.title.rendered}</h2>
-                        </a>
+                       
                         <p
                           dangerouslySetInnerHTML={{
                             __html: item.excerpt.rendered.substring(0, 70),
