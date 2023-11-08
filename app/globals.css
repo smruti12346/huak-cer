@@ -3461,3 +3461,7 @@ input.half_width {
 /* @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
 .blog_share_box12{height:auto!important;}
 } */
+.feature_service_box_width
+{
+  background-color: #4b8dd3 !important;
+}
