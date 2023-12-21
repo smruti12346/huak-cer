@@ -1,2 +1,12 @@
 <IfModule mod_rewrite.c> RewriteEngine On </IfModule>
 Redirect /index.html https://huak-cer.com/index.html
+
+Redirect /services/eu-certification-project/ce-certification /ce-certification-europe/
+Redirect /services/eu-certification-project/ts-certification /ts-certification-europe/
+Redirect /services/american-certification/fcc-certification-of-us /fcc-certification/
+Redirect /services/american-certification/ic-certification-of-canada /ic-certification/
+Redirect /services/certification-project-of-asian/telec-certification-of-japan /TELEC-certification/
+Redirect /services/eu-certification-project/rohs-testing /rohs-certification/
+Redirect /services/eu-certification-project/reach-certification /reach-certification/
+Redirect /services/eu-certification-project/reach-certification /reach-compliance-certificate/
+Redirect /services/american-certification/cpc-certification /american-children-product-certification/

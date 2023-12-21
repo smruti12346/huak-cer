@@ -75,7 +75,7 @@ const Page = async (props) => {
                       href={
                         item.content.rendered.length < 10
                           ? `/contactus?name=${item.slug}`
-                          : `/services/${slug}/${item.slug}`
+                          : `/${item.slug}`
                       }
                     >
                       <div className="blog_share_box blog_share_box12">
@@ -115,7 +115,7 @@ const Page = async (props) => {
                                   href={
                                     item.content.rendered.length < 10
                                       ? `/contactus?name=${item.slug}`
-                                      : `/services/${slug}/${item.slug}`
+                                      : `/${item.slug}`
                                   }
                                 >
                                   {item.title.rendered}
