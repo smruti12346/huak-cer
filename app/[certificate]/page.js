@@ -24,6 +24,9 @@ export async function generateMetadata({ params }) {
       type: "website",
       site_name: "Huak-cer",
     },
+    alternates: {
+      canonical: `https://huak-cer.com/${params.certificate}/`,
+    },
   };
 }
 function scrollToQuoteSection() {
