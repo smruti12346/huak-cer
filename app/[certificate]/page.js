@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       site_name: "Huak-cer",
     },
     alternates: {
-      canonical: `https://huak-cer.com/${params.certificate}/`,
+      canonical: `https://huak-cer.com/${params.certificate}/`,  
     },
   };
 }
@@ -131,7 +131,7 @@ async function Page(props) {
                     }}
                   ></div>
                   <div id="callform">
-                    <FormOne name={props.params.one} />
+                    <FormOne name={props.params.certificate} />
                   </div>
                 </div>
               </div>
