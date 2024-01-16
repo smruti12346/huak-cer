@@ -48,12 +48,12 @@ function TopNavbar() {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/shenzhenhuak" target="blank">
+                      <a href="https://www.facebook.com/shenzhenhuaklab" target="blank">
                         <i className="fa fa-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/company/shenzhen-huak/" target="blank">
+                      <a href="https://www.linkedin.com/company/shenzhenhuaklab/" target="blank">
                         <i className="fa fa-linkedin" />
                       </a>
                     </li>
