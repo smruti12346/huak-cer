@@ -250,7 +250,7 @@ const FormOne = ({ name }) => {
       if (response.status === 200 && response.data.status === "mail_sent") {
         setSuccess(true);
         resetForm(); // Reset the form on success
-        // window.location.href = `/thank-you?service=${name}`;
+        window.location.href = `/thank-you?service=${name}`;
       } else {
         setSuccess(false);
         setMessage("Failed to send form data.");
