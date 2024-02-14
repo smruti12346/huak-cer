@@ -77,7 +77,7 @@ function Footer() {
                 {/*end .footer_textwidget .textwidget*/}
               </div>
               {/*end .col-md-4*/}
-              <div className="col-md-2 col-sm-3">
+              <div className="col-md-1 col-sm-3">
                 <h2>Quick Links</h2>
                 <ul className="footer_link">
                   <li>
@@ -90,47 +90,42 @@ function Footer() {
                     <Link href="services">Services</Link>
                   </li>
                   <li>
-                    <Link href="contactus">Contact Us</Link>
+                    <Link href="contactus">Contact</Link>
                   </li>
                 </ul>
                 {/*end .footer_link*/}
               </div>
               {/*end .col-md-2*/}
-              <div className="col-md-2 col-sm-3">
+              <div className="col-md-3 col-sm-3">
+              <h2>Services</h2>
                 <ul className="footer_link extra_mt">
                   <li>
-                    <a href>Careers</a>
+                    <a href="https://huak-cer.com/services/american-certification/">American Certification</a>
                   </li>
                   <li>
-                    <a href>Privacy Policy</a>
+                    <a href="https://huak-cer.com/services/australian-certification-project/">Australian Certification Project</a>
                   </li>
                   <li>
-                    <a href>Change Location</a>
+                    <a href="https://huak-cer.com/services/certification-project-of-asian/">Certification Project of Asian</a>
                   </li>
-                  <li>
-                    <a href>Expert Tips</a>
-                  </li>
-                  <li>
-                    <a href>Terms &amp; Conditions</a>
-                  </li>
+                  
                 </ul>
                 {/*end .footer_link*/}
               </div>
               {/*end .col-md-2*/}
               <div className="col-md-3 col-sm-6">
-                <div className="newslatter">
-                  <h2>Newsletter</h2>
-                  <input
-                    type="EMAIL"
-                    placeholder="Enter your email"
-                  />
-                  <button
-                    className="btn-yellow"
-                    value="SUBMIT NOW"
-                  >
-                    SUBSCRIBE
-                  </button>
-                </div>
+              <ul className="footer_link extra_mt">
+                  
+                  <li>
+                    <a href="https://huak-cer.com/services/certification-project-of-china/">Certification Project of China</a>
+                  </li>
+                  <li>
+                    <a href="https://huak-cer.com/services/eu-certification-project/">EU Certification Project</a>
+                  </li>
+                  <li>
+                    <a href="https://huak-cer.com/services/other-certification-projects/">Other Certification Projects</a>
+                  </li>
+                </ul>
                 {/*end .newslatter*/}
               </div>
               {/*end .col-md-4*/}
