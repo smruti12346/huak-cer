@@ -3472,6 +3472,6 @@ input.half_width {
 }
 .contacthead
 {
-  font-size: 28px;
-  color: #2C347C;
+  font-size: 28px !important;
+  color: #2C347C !important;
 }
