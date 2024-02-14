@@ -17,6 +17,7 @@ export async function generateMetadata({ params }) {
   const product = await getData(params.certificate);
   return {
     title: product[0]?.acf?.meta_title || "Default Title",
+    description: product[0]?.acf?.meta_description || "",
     openGraph: {
       title: product[0]?.acf?.meta_title || "Default Title",
       description: product[0]?.acf?.meta_description || "",
