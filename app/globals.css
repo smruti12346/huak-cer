@@ -3465,3 +3465,13 @@ input.half_width {
 {
   background-color: #4b8dd3 !important;
 }
+.servicehead
+{
+  font-size: 45px;
+  color: #fff;
+}
+.contacthead
+{
+  font-size: 28px;
+  color: #2C347C;
+}

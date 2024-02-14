@@ -42,7 +42,7 @@ async function Page(props) {
   return (
     <>
       <section className="breadcrumb_section text-center section_padding">
-        <h1> {data[0].title?.rendered}</h1>
+        <p className="servicehead"> {data[0].title?.rendered}</p>
       </section>
       <div className="col-12 col-sm-12">
         <div className="service_style_3_area text-center section_padding one-section">

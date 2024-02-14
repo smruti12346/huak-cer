@@ -274,9 +274,9 @@ const FormOne = ({ name }) => {
                   <Link href="#scr">
                     <h4 className="btn-yellow">Contact with us</h4>
                   </Link>
-                  <h1>
+                  <p className="contacthead">
                     We offer 24/7 emergency service to all of our customers
-                  </h1>
+                  </p>
                 </div>
               </div>
             </div>
