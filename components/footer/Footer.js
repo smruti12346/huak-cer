@@ -97,33 +97,40 @@ function Footer() {
               </div>
               {/*end .col-md-2*/}
               <div className="col-md-3 col-sm-3">
-              <h2>Services</h2>
+              <h2  style={{textAlign:`end`}}>Services</h2>
                 <ul className="footer_link extra_mt">
                   <li>
-                    <a href="https://huak-cer.com/services/american-certification/">American Certification</a>
+                    <a href="https://huak-cer.com/ce-certification-europe/">Ce certification europe</a>
                   </li>
                   <li>
-                    <a href="https://huak-cer.com/services/australian-certification-project/">Australian Certification Project</a>
+                    <a href="https://huak-cer.com/fcc-certification/">Fcc certification</a>
                   </li>
                   <li>
-                    <a href="https://huak-cer.com/services/certification-project-of-asian/">Certification Project of Asian</a>
+                    <a href="https://huak-cer.com/ic-certification/">Ic certification</a>
                   </li>
-                  
+                  <li>
+                    <a href="https://huak-cer.com/TELEC-certification/">TELEC certification</a>
+                  </li>
                 </ul>
                 {/*end .footer_link*/}
               </div>
               {/*end .col-md-2*/}
+              
               <div className="col-md-3 col-sm-6">
+                <h4>service</h4>
               <ul className="footer_link extra_mt">
                   
                   <li>
-                    <a href="https://huak-cer.com/services/certification-project-of-china/">Certification Project of China</a>
+                    <a href="https://huak-cer.com/rohs-certification/">Rohs certification</a>
                   </li>
                   <li>
-                    <a href="https://huak-cer.com/services/eu-certification-project/">EU Certification Project</a>
+                    <a href="https://huak-cer.com/reach-certification/">Reach certification</a>
                   </li>
                   <li>
-                    <a href="https://huak-cer.com/services/other-certification-projects/">Other Certification Projects</a>
+                    <a href="https://huak-cer.com/reach-certification/">Reach compliance certificate</a>
+                  </li>
+                  <li>
+                    <a href="https://huak-cer.com/american-children-product-certification/">American children product certification</a>
                   </li>
                 </ul>
                 {/*end .newslatter*/}
