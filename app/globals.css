@@ -2834,9 +2834,9 @@ input.half_width {
   width: 48%;
   float: left;
 }
-.contact_form_width.contact-right {
+/* .contact_form_width.contact-right {
   padding: 120px 380px 120px 117px;
-}
+} */
 .contact-right-style-2 input.input_m_right,
 .contact_form_width input.input_m_right {
   margin-right: 4%;
