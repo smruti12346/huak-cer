@@ -243,7 +243,15 @@ const FormOne = ({ name }) => {
       
       const response = await axios.post(
         "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/749/feedback",
-        formData
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+          params: {
+            "_wpcf7_unit_tag": "wpcf7-f9-p141-o1",
+          },
+        }
       );
 
       setLoader(false);
