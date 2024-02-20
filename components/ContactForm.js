@@ -29,28 +29,29 @@ const validationSchema = Yup.object().shape({
 const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = async (values, { resetForm }) => {
-  try {
-    const response = await axios.post(
-      `https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/746/feedback?_wpcf7_unit_tag=wpcf7-f579-p1231-o1`,
-      values,
-      {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      }
-    );
+    try {
+      const response = await axios.post(
+        "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/746/feedback",
+        values,
+        {
+          headers: {
+            // "Content-Type": "application/json",
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
-    if (response.status === 200) {
-      console.log("Form data sent successfully!");
-      setIsSubmitted(true);
-    } else {
-      console.error("Failed to send form data.");
+      if (response.status === 200) {
+        console.log("Form data sent successfully!");
+        setIsSubmitted(true);
+      } else {
+        console.error("Failed to send form data.");
+      }
+      resetForm();
+    } catch (error) {
+      console.error("An error occurred:", error);
     }
-    resetForm();
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-};
+  };
   // };
   return (
     <>
