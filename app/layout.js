@@ -57,6 +57,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T9SLR34S');`,
           }}
         ></Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11292301273"
+        />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11292301273');`,
+          }}
+        />
         <Header />
         {children}
         <Footer />
