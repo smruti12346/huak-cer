@@ -2833,9 +2833,9 @@ input.half_width {
   width: 48%;
   float: left;
 }
-.contact_form_width.contact-right {
+/* .contact_form_width.contact-right {
   padding: 120px 380px 120px 117px;
-}
+} */
 .contact-right-style-2 input.input_m_right,
 .contact_form_width input.input_m_right {
   margin-right: 4%;
@@ -3463,4 +3463,14 @@ input.half_width {
 .feature_service_box_width
 {
   background-color: #4b8dd3 !important;
+}
+.servicehead
+{
+  font-size: 45px;
+  color: #fff;
+}
+.contacthead
+{
+  font-size: 28px !important;
+  color: #2C347C !important;
 }

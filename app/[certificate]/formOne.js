@@ -240,10 +240,18 @@ const FormOne = ({ name }) => {
       formData.append("country", selectedCountry ? selectedCountry.label : "");
       formData.append("service", name);
       formData.append("message", values.message);
-
+      
       const response = await axios.post(
         "https://api.huak-cer.com/wp-json/contact-form-7/v1/contact-forms/749/feedback",
-        formData
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+          params: {
+            "_wpcf7_unit_tag": "wpcf7-f9-p141-o1",
+          },
+        }
       );
 
       setLoader(false);
@@ -274,9 +282,9 @@ const FormOne = ({ name }) => {
                   <Link href="#scr">
                     <h4 className="btn-yellow">Contact with us</h4>
                   </Link>
-                  <h1>
+                  <p className="contacthead">
                     We offer 24/7 emergency service to all of our customers
-                  </h1>
+                  </p>
                 </div>
               </div>
             </div>

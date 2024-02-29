@@ -17,6 +17,7 @@ export async function generateMetadata({ params }) {
   const product = await getData(params.certificate);
   return {
     title: product[0]?.acf?.meta_title || "Default Title",
+    description: product[0]?.acf?.meta_description || "",
     openGraph: {
       title: product[0]?.acf?.meta_title || "Default Title",
       description: product[0]?.acf?.meta_description || "",
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }) {
       site_name: "Huak-cer",
     },
     alternates: {
-      canonical: `https://huak-cer.com/${params.certificate}/`,
+      canonical: `https://huak-cer.com/${params.certificate}/`,  
     },
   };
 }
@@ -42,7 +43,7 @@ async function Page(props) {
   return (
     <>
       <section className="breadcrumb_section text-center section_padding">
-        <h1> {data[0].title?.rendered}</h1>
+        <p className="servicehead"> {data[0].title?.rendered}</p>
       </section>
       <div className="col-12 col-sm-12">
         <div className="service_style_3_area text-center section_padding one-section">
@@ -131,7 +132,7 @@ async function Page(props) {
                     }}
                   ></div>
                   <div id="callform">
-                    <FormOne name={props.params.one} />
+                    <FormOne name={props.params.certificate} />
                   </div>
                 </div>
               </div>
