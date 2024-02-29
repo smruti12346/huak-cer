@@ -98,7 +98,6 @@ h6 {
 p {
   margin: 0;
   padding: 0;
-  font-size: 18px;
   color: #2e2e2e;
   font-family: "josefin", sans-serif;
 }
@@ -3446,7 +3445,7 @@ input.half_width {
 .css-1fdsijx-ValueContainer
 {
   background: #d5d5d5 !important;
-  color: #141414; 
+  color: #141414;
 }
 .css-13cymwt-control
 {
