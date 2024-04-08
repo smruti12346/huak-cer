@@ -3428,6 +3428,12 @@ input.half_width {
   border-radius: 5px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .get-quote-button{
+    padding: 2px 3px !important;
+    font-size: 8px !important;
+  }
+}
 
 .get-quote-button:hover {
   background-color: #0056b3; /* Button background color on hover */
