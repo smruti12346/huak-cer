@@ -148,7 +148,7 @@ const Page = async (props) => {
                           className="blog_share_details"
                           style={{ width: "100%" }}
                         >
-                          <h1 style={{ margin: "10px" }}>
+                          <h1 style={{ margin: "10px" , color:'#000' }}>
                             Get A Quote For Other Certification{" "}
                             {slug == "american-certification"
                               ? "of America"
