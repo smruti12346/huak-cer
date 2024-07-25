@@ -3480,3 +3480,15 @@ input.half_width {
   font-size: 28px !important;
   color: #2C347C !important;
 }
+
+/* Desktop view */
+.search-form {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .search-form {
+      display: block;
+  }
+}

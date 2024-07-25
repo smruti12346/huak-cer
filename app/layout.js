@@ -15,12 +15,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shenzhen HUAK - Certification Services",
-  description:
-    "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
+  description: "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
   openGraph: {
     title: "Shenzhen HUAK - Certification Services",
-    description:
-      "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
+    description: "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
     locale: "en_US",
     type: "website",
     url: "https://huak-cer.com",
@@ -35,10 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta
-          name="google-site-verification"
-          content="AYKBSpCdakY4gr3g6izBLZQJJkzoTFnqtLkOqbyz2No"
-        />
+        <meta name="google-site-verification" content="AYKBSpCdakY4gr3g6izBLZQJJkzoTFnqtLkOqbyz2No" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-4W7S589GPE" />
         <Script id="google-analytics">
           {`
@@ -57,10 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T9SLR34S');`,
           }}
         ></Script>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-11292301273"
-        />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11292301273" />
         <Script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
@@ -86,9 +78,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         <Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: `{
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Shenzhen HUAK Testing Technology Co., Ltd",
@@ -101,12 +93,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "https://huak-cer.com/"
       ]
     }`,
-  }}
-/>
-<Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: `{
+          }}
+        />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Shenzhen HUAK Testing Technology Co., Ltd",
@@ -127,9 +119,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "https://huak-cer.com/"
       ]
     }`,
-  }}
-/>
-
+          }}
+        />
       </Head>
       <body className={inter.className}>
         <Header />
