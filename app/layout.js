@@ -15,10 +15,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shenzhen HUAK - Certification Services",
-  description: "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
+  description:
+    "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
   openGraph: {
     title: "Shenzhen HUAK - Certification Services",
-    description: "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
+    description:
+      "Shenzhen HUAK provides comprehensive certification services. Ensure compliance and quality with our expert solutions for various industries.",
     locale: "en_US",
     type: "website",
     url: "https://huak-cer.com",
@@ -32,8 +34,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="AYKBSpCdakY4gr3g6izBLZQJJkzoTFnqtLkOqbyz2No" />
+      <body className={inter.className}>
+        <meta
+          name="google-site-verification"
+          content="AYKBSpCdakY4gr3g6izBLZQJJkzoTFnqtLkOqbyz2No"
+        />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-4W7S589GPE" />
         <Script id="google-analytics">
           {`
@@ -52,7 +57,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T9SLR34S');`,
           }}
         ></Script>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11292301273" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11292301273"
+        />
         <Script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
@@ -61,68 +69,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'AW-11292301273');`,
           }}
         />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org/",
-              "@type": "WebSite",
-              "name": "Shenzhen HUAK Testing Technology Co., Ltd",
-              "url": "https://huak-cer.com/",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://huak-cer.com//search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            }`,
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Shenzhen HUAK Testing Technology Co., Ltd",
-      "alternateName": "HUAK",
-      "url": "https://huak-cer.com/",
-      "logo": "https://huak-cer.com/_next/image/?url=%2Fassets%2Fimages%2Flogo.png&w=96&q=75",
-      "sameAs": [
-        "https://cn.linkedin.com/company/shenzhenhuaklab",
-        "https://x.com/HuakShenzh18054",
-        "https://huak-cer.com/"
-      ]
-    }`,
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Shenzhen HUAK Testing Technology Co., Ltd",
-      "image": "https://huak-cer.com/_next/image/?url=%2Fassets%2Fimages%2Flogo.png&w=96&q=75",
-      "@id": "",
-      "url": "https://huak-cer.com/",
-      "telephone": "+86-135-28437881",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1-2F, B2 Building, Junfeng Zhongcheng Zhizao Innovation Park, Heping Community, Fuhai Street, Bao'an District,",
-        "addressLocality": "Shenzhen",
-        "postalCode": "",
-        "addressCountry": "CN"
-      },
-      "sameAs": [
-        "https://x.com/HuakShenzh18054",
-        "https://cn.linkedin.com/company/shenzhenhuaklab",
-        "https://huak-cer.com/"
-      ]
-    }`,
-          }}
-        />
-      </Head>
-      <body className={inter.className}>
         <Header />
         {children}
         <Footer />
