@@ -93,7 +93,7 @@ function Footer() {
                     <Link href="contactus">Contact</Link>
                   </li>
                   <li>
-                    <Link href="/assets/images/sitemap.html">Sitemap</Link>
+                    <Link href="/sitemap.html">Sitemap</Link>
                   </li>
                 </ul>
                 {/*end .footer_link*/}
