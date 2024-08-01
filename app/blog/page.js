@@ -41,7 +41,7 @@ async function Page() {
                     </div>
                     <div className="blog_share_details">
                       <h1>
-                        <a href="#">{item.title.rendered}</a>
+                        <a href={`/blog/${item.slug}`}>{item.title.rendered}</a>
                       </h1>
                       <span className="blog_date">{item.x_date}</span>
                       {/* <span
