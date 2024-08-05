@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  output: {
+    filename: "[name].bundle.js",
+    chunkFilename: "[name].chunk.bundle.js",
+    path: path.resolve(__dirname, "dist"),
+  },
+  future: {
+    webpack5: true,
+  },
   images: {
     domains: ["api.huak-cer.com"],
   },
