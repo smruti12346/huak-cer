@@ -2,7 +2,7 @@ import { api_url } from "@/Auth";
 import Link from "next/link";
 
 const getData = async () => {
-  const res = await fetch(`${api_url}/posts`, {
+  const res = await fetch(`${api_url}/posts?per_page=100`, {
     next: { revalidate: 2 },
   });
   const data = await res.json();
