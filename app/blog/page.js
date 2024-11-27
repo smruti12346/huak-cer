@@ -10,7 +10,9 @@ const PAGE_SIZE = 10; // Number of items per page
 const getData = async (page = 1) => {
   console.log(page, "===============");
 
-  const res = await fetch(`${api_url}/posts?_page=${page}&_limit=${PAGE_SIZE}`, {
+  // const res = await fetch(`${api_url}/posts?_page=${page}&_limit=${PAGE_SIZE}`, {
+    const res = await fetch(`${api_url}/posts?_embed`, {
+
     next: { revalidate: 2 },
   });
   console.log(res, "=============")
@@ -101,7 +103,9 @@ export default function Page() {
                   <div>
                     <div className="bl_share_img">
                       <img
-                        src={`${item.x_featured_media_large}`}
+                        // src={`${item.x_featured_media_large}`}
+                        src={`${item._embedded["wp:featuredmedia"][0].source_url}`}
+
                         alt={`blog ${index}`}
                         style={{ width: "100%" }}
                       />
